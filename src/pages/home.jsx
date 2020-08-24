@@ -9,7 +9,11 @@ const MainPage = () => {
     <div className="homePage">
       <div className="navLeft">
         <p class="sign">
-          <span class="fast-flicker">A</span>bo<span class="flicker">u</span>t
+          <span class="fast-flicker">A</span>
+          <span class="flicker">b</span>
+          <span class="fast-flicker">o</span>
+          <span class="flicker">u</span>
+          <span class="fast-flicker">t</span>
         </p>
       </div>
       <div className="homePageRightSide">
