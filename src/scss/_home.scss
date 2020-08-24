@@ -1,130 +1,157 @@
-// /*___________Animating list items _______*/
-
-// /*______________ h1 and paragraph_________*/
-
 .homePage {
   width: 100vw;
   height: 100vh;
-  .navbarArea {
-    width: 100%;
-    height: 13%;
-    z-index: 10;
+  display: flex;
+
+  .navLeft {
+    width: 10%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-
-    .logo {
-      margin-top: 1rem;
-      color: #c2363dee;
-      font-family: "Monoton", cursive;
-    }
-
-    .navList {
+    p {
+      width: 3rem;
+      height: 1.5rem;
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      z-index: 10;
-      width: 50%;
-      list-style: none;
 
-      a {
-        color: #9c9c9ccb;
-        letter-spacing: 0.24rem;
-        line-height: 1rem;
-        font-size: 1.1rem;
-
-        &:hover {
-          animation: moveListItem 2s linear infinite;
-          animation-direction: alternate;
-          color: #9c9c9c9a;
-        }
+      transform: rotate(-90deg);
+      letter-spacing: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+      font-size: x-small;
+      cursor: pointer;
+      &:hover {
+        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      }
+      & span:hover {
+        color: #c2363dee;
       }
     }
   }
-  .circles {
-    height: 54%;
-    width: 100%;
-    .greeting {
-      position: absolute;
-      top: 20rem;
-      left: 70.1rem;
-      color: #c2363dee;
-      letter-spacing: 0.25rem;
-      font-size: 0.9rem;
-      animation: translationGreeting 2s linear infinite alternate;
-    }
-    .big-circle {
-      width: 12rem;
-      height: 12rem;
-      top: 15rem;
-      right: 15rem;
-      opacity: 0.7;
-      border-radius: 50%;
-      position: absolute;
-      background: rgba(0, 0, 0, 0.555);
-      animation: planet-holder 20s linear infinite;
-      box-shadow: inset 0 0 0.4rem 0.2rem #9c9c9c9a,
-        inset 0.1rem 0 0.1rem 0 rgba(90, 199, 199, 0.726),
-        0 0 1.25rem 0 #9c9c9c9a;
-      .small-circle {
-        width: 2.5rem;
-        height: 2.5rem;
-        left: 0.4rem;
-        top: 0.6rem;
-        font-size: 0.8rem;
-        font-weight: bolder;
-        border-radius: 50%;
-        background: black;
-        color: #c2363dee;
+  .homePageRightSide {
+    width: 80%;
+    height: 100%;
+    .navbarArea {
+      width: 100%;
+      height: 13%;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
 
-        position: absolute;
+      .logo {
+        margin-top: 1rem;
+        color: #c2363dee;
+        font-family: "Monoton", cursive;
+        font-size: 1.6rem;
+      }
+
+      .navList {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        animation: planet 20s linear infinite;
+        justify-content: space-around;
+        z-index: 10;
+        width: 50%;
+        list-style: none;
+
+        a {
+          color: #9c9c9ccb;
+          letter-spacing: 0.24rem;
+          line-height: 1rem;
+          font-size: 1.1rem;
+
+          &:hover {
+            animation: moveListItem 2s linear infinite;
+            animation-direction: alternate;
+            color: #9c9c9c9a;
+          }
+        }
+      }
+    }
+    .circles {
+      height: 54%;
+      width: 100%;
+      .greeting {
+        position: absolute;
+        top: 20rem;
+        left: 70.1rem;
+        color: #c2363dee;
+        letter-spacing: 0.25rem;
+        font-size: 0.9rem;
+        animation: translationGreeting 2s linear infinite alternate;
+      }
+      .big-circle {
+        width: 12rem;
+        height: 12rem;
+        top: 15rem;
+        right: 15rem;
+        opacity: 0.7;
+        border-radius: 50%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.555);
+        animation: planet-holder 20s linear infinite;
         box-shadow: inset 0 0 0.4rem 0.2rem #9c9c9c9a,
           inset 0.1rem 0 0.1rem 0 rgba(90, 199, 199, 0.726),
           0 0 1.25rem 0 #9c9c9c9a;
-        .time-input {
+        .small-circle {
           width: 2.5rem;
-          text-align: center;
-          background: transparent;
-          border: none;
-          color: rgb(238, 63, 72);
+          height: 2.5rem;
+          left: 0.4rem;
+          top: 0.6rem;
+          font-size: 0.8rem;
+          font-weight: bolder;
+          border-radius: 50%;
+          background: black;
+          color: #c2363dee;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          animation: planet 20s linear infinite;
+          box-shadow: inset 0 0 0.4rem 0.2rem #9c9c9c9a,
+            inset 0.1rem 0 0.1rem 0 rgba(90, 199, 199, 0.726),
+            0 0 1.25rem 0 #9c9c9c9a;
+          .time-input {
+            width: 2.5rem;
+            text-align: center;
+            background: transparent;
+            border: none;
+            color: rgb(238, 63, 72);
+          }
         }
       }
     }
-  }
-  .nameArea {
-    height: 25%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    .name-info {
-      font-size: 1.5rem;
+    .nameArea {
+      height: 25%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      .name-info {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        letter-spacing: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 2rem;
+      }
+      .job-info {
+        letter-spacing: 4px;
+        color: #c2363dee;
+        font-size: large;
+      }
+    }
+    .scrollArrow {
+      width: 100%;
+      height: 5%;
+      font-size: larger;
       font-weight: lighter;
-      letter-spacing: 0.3rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 2rem;
-      margin-left: 10rem;
+      letter-spacing: 0.19rem;
+      display: flex;
+      justify-content: center;
     }
-    .job-info {
-      letter-spacing: 4px;
-      color: #c2363dee;
-      font-size: large;
-      margin-left: 10rem;
-    }
-  }
-  .scrollArrow {
-    width: 100%;
-    height: 5%;
-    font-size: larger;
-    font-weight: lighter;
-    letter-spacing: 0.19rem;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -161,5 +188,26 @@
   }
   to {
     transform: translateX(-5%);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
