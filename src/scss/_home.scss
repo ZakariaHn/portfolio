@@ -1,0 +1,162 @@
+// /*___________Animating list items _______*/
+
+// /*______________ h1 and paragraph_________*/
+
+.homePage {
+  width: 100vw;
+  height: 100vh;
+  .navbarArea {
+    width: 100%;
+    height: 13%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+    .logo {
+      margin-top: 1rem;
+      color: #c2363dee;
+      font-family: "Monoton", cursive;
+    }
+
+    .navList {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 10;
+      width: 50%;
+      list-style: none;
+
+      a {
+        color: #9c9c9ccb;
+        letter-spacing: 0.24rem;
+        line-height: 1rem;
+        font-size: 1.1rem;
+
+        &:hover {
+          animation: moveListItem 2s linear infinite;
+          animation-direction: alternate;
+          color: #9c9c9c9a;
+        }
+      }
+    }
+  }
+  .circles {
+    height: 54%;
+    width: 100%;
+    .greeting {
+      position: absolute;
+      top: 20rem;
+      left: 70.1rem;
+      color: rgba(194, 54, 61, 0.933);
+      letter-spacing: 0.25rem;
+      font-size: 0.9rem;
+      animation: translationGreeting 2s linear infinite alternate;
+    }
+    .big-circle {
+      width: 12rem;
+      height: 12rem;
+      top: 15rem;
+      right: 15rem;
+      opacity: 0.7;
+      border-radius: 50%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.555);
+      animation: planet-holder 20s linear infinite;
+      box-shadow: inset 0 0 0.4rem 0.2rem #9c9c9c9a,
+        inset 0.1rem 0 0.1rem 0 rgba(90, 199, 199, 0.726),
+        0 0 1.25rem 0 #9c9c9c9a;
+      .small-circle {
+        width: 2.5rem;
+        height: 2.5rem;
+        left: 0.4rem;
+        top: 0.6rem;
+        font-size: 0.7rem;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        animation: planet 20s linear infinite;
+        box-shadow: inset 0 0 0.4rem 0.2rem #9c9c9c9a,
+          inset 0.1rem 0 0.1rem 0 rgba(90, 199, 199, 0.726),
+          0 0 1.25rem 0 #9c9c9c9a;
+        .time-input {
+          width: 2.5rem;
+          text-align: center;
+          background: transparent;
+          border: none;
+          color: rgb(238, 63, 72);
+        }
+      }
+    }
+  }
+  .nameArea {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    .name-info {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      letter-spacing: 0.3rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 2rem;
+      margin-left: 10rem;
+    }
+    .job-info {
+      letter-spacing: 4px;
+      color: #c2363dee;
+      font-size: large;
+      margin-left: 10rem;
+    }
+  }
+  .scrollArrow {
+    width: 100%;
+    height: 5%;
+    font-size: larger;
+    font-weight: lighter;
+    letter-spacing: 0.19rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@keyframes moveListItem {
+  from {
+    transform: translate(1rem, -1rem);
+    transform: rotate(5deg) scale(1);
+    text-shadow: -0.14rem 0.1rem -0.5rem rgba(49, 49, 49, 0.897),
+      2rem 1.5rem 0.2rem #c2363d48;
+  }
+  to {
+    transform: rotate(-5deg) scale(1.2);
+    text-shadow: -0.9rem 0.8rem 0.5rem rgba(49, 49, 49, 0.897),
+      2rem 1.2rem 0.2rem #c2363d48;
+  }
+}
+
+// /*____________ Greeting Planets __________*/
+@keyframes planet {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes planet-holder {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes translationGreeting {
+  from {
+    transform: translateX(4%);
+  }
+  to {
+    transform: translateX(-5%);
+  }
+}
