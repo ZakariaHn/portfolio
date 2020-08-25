@@ -2,8 +2,10 @@ import React from "react";
 
 const ArrowDown = () => {
   return (
-    <div className="scrollArrow">
-      <p>&#8595;</p>
+    <div className="arrowDown">
+      <span class="fast-flicker">
+        <p>&#8595;</p>
+      </span>
     </div>
   );
 };
