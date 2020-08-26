@@ -33,7 +33,9 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "react-switch": "^5.0.1"
+    "react-switch": "^5.0.1",
+    "react-transition-group": "^4.4.1",
+    "save": "^2.4.0"
   },
   "browserslist": {
     "production": [

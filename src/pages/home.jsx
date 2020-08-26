@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/homePageComponents/navBar";
 import Circles from "../components/homePageComponents/circles";
 import NameArea from "../components/homePageComponents/nameArea";
 import ArrowDown from "../components/homePageComponents/arrowDown";
 
-const MainPage = () => {
+const HomePage = () => {
+  const [initialClass, setClass] = useState("min");
+  const [jobInfos, setInfos] = useState("job-info");
+
+  const handleNavLeftClass = () => {
+    setClass("max");
+    setTimeout(() => {
+      handleJobInfosClass();
+    }, 600);
+  };
+  const handleJobInfosClass = () => {
+    setInfos("hideJobInfos");
+  };
+
   return (
     <div className="homePage">
-      <div className="navLeft">
-        <p className="animated">ABOUT</p>
+      <div className={`navLeft ${initialClass}`}>
+        <p to="/about" onClick={handleNavLeftClass} className="lblAbout">
+          About
+        </p>
       </div>
       <div className="homePageBody">
         <NavBar></NavBar>
         <Circles></Circles>
-        <NameArea></NameArea>
+        <NameArea jobInfos={jobInfos}></NameArea>
         <ArrowDown></ArrowDown>
       </div>
     </div>
   );
 };
 
-export default MainPage;
+export default HomePage;

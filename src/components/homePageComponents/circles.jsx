@@ -11,9 +11,11 @@ const Circles = () => {
   else if (hrs >= 17 && hrs <= 24) greet = "Good Evening";
 
   const renderSpan = () => {
-    return greet
-      .split("")
-      .map((letter) => <span className="fast-flicker">{letter}</span>);
+    return greet.split("").map((letter, key) => (
+      <span key={key} className="fast-flicker">
+        {letter}
+      </span>
+    ));
   };
 
   return (

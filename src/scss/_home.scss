@@ -59,7 +59,8 @@
   justify-content: center;
   align-items: center;
   margin-right: 3rem;
-  p {
+
+  .lblAbout {
     width: 3.4rem;
     height: 1.5rem;
     display: flex;
@@ -70,9 +71,21 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: x-small;
+    text-decoration: none;
+    background: linear-gradient(
+      to right,
+      #9c9c9c9a 50%,
+      #794244ee 25%,
+      #c2363dee
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
     cursor: pointer;
     &:hover {
       animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      background-position: -100%;
     }
     & span:hover {
       color: #c2363dee;
@@ -225,16 +238,16 @@
   flex-direction: column;
   flex-flow: column;
   .name-info {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.3rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 2rem;
   }
   .job-info {
+    font-size: 1.2rem;
     letter-spacing: 4px;
     color: #c2363dee;
-    font-size: large;
   }
 }
 
