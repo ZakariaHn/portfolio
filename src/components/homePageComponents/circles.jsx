@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Circles = () => {
+const Circles = (props) => {
   let today = new Date(),
     time = today.getHours() + ":" + today.getMinutes(),
     hrs = today.getHours();
@@ -20,11 +20,11 @@ const Circles = () => {
 
   return (
     <div className="circles">
-      <div className="greeting">
+      <div className={props.greeting}>
         <div id="lblGreetings">{renderSpan()}</div>
       </div>
-      <div className="row big-circle">
-        <div className="small-circle">{time}</div>
+      <div className={`row ${props.big_circle}`}>
+        <div className={`row ${props.small_circle}`}>{time}</div>
       </div>
     </div>
   );
