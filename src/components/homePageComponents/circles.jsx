@@ -27,8 +27,8 @@ const Circles = (props) => {
         <div className={`row ${props.small_circle}`}>{time}</div>
       </div>
       <div className={props.navigator}>
-        <p>Work</p>
-        <p>services</p>
+        <p>WORK</p>
+        <p>SERVICES</p>
       </div>
     </div>
   );

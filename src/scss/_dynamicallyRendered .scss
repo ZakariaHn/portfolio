@@ -1,7 +1,7 @@
 .max {
   width: 190%;
   border-right: 0.9px solid #c2363dee;
-  transition: 1s ease-in;
+  transition: width 1s ease-in;
 }
 
 .hide {
@@ -38,4 +38,19 @@
   content: "Zakaria Hamdan";
   transition: 1s ease-in;
   width: 15rem;
+}
+
+.show_work-services-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  width: 20rem;
+  letter-spacing: 3px;
+  opacity: 1;
+  font-size: larger;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-4rem, 30rem);
+  border-bottom: 2px solid #c2363dee;
+  padding: 0.5rem;
 }

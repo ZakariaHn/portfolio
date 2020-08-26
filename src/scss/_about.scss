@@ -1,19 +1,18 @@
 .bio {
   opacity: 0;
-  text-align: left;
+  text-align: justify;
   letter-spacing: 2px;
   line-height: 1.8rem;
   width: 20rem;
-  height: 18rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 .first {
-  transform: translate(-11rem, 9.8rem);
   opacity: 1;
-  transition: 1s ease-out;
+  transition: opacity 1s ease-out;
+  margin: 15% 35% 0 5%;
 }
 .seconde {
-  transform: translate(11rem, -5.9rem);
   opacity: 1;
-  transition: 1s;
+  transition: opacity 1s ease-out;
+  margin: 0 10% 20% 40%;
 }

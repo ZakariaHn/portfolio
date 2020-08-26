@@ -9,22 +9,20 @@ const NavLeft = (props) => {
 
   // Changes when opening the About section
 
-  async function handle_nav_left_class() {
-    await setClass("max");
-    await handle_job_infos_class();
-    await handle_About_first_step();
-    await handle_bio_visibelity();
-    await handle_first_bio();
-    await handle_seconde_bio();
-    await translate_name();
+  function showAboutPage() {
+    setClass("max");
+    handle_job_infos_class();
+    handle_About_first_step();
+    handle_bio_visibelity();
+    handle_first_bio();
+    handle_seconde_bio();
+    translate_name();
   }
 
   const handle_job_infos_class = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(props.set_infos("hide"));
-      }, 100);
-    });
+    setTimeout(() => {
+      props.set_infos("hide");
+    }, 100);
   };
 
   const handle_About_first_step = () => {
@@ -52,6 +50,7 @@ const NavLeft = (props) => {
     props.set_big_circle("imagedCircle");
     props.set_greeting("hide");
     props.set_small_circle("hide");
+    props.set_navigator("show_work-services-nav");
   };
 
   return (
@@ -61,7 +60,7 @@ const NavLeft = (props) => {
         areas of study and artistic endeavor. Passionate about writing clean,
         quality, high-performance codes and cooking both good food and music
       </p>
-      <p to="/about" onClick={handle_nav_left_class} className={AboutAnchore}>
+      <p to="/about" onClick={showAboutPage} className={AboutAnchore}>
         About
       </p>
       <p className={`${bio} ${seconde_bio}`}>
