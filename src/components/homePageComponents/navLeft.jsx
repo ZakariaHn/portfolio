@@ -16,18 +16,14 @@ const NavLeft = (props) => {
     await handle_bio_visibelity();
     await handle_first_bio();
     await handle_seconde_bio();
-    // await hide_circle();
-    // await hide_greeting();
-    // await add_image();
     await translate_name();
-    // await hide_span_name();
   }
 
   const handle_job_infos_class = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(props.setInfos("hide"));
-      }, 1000);
+        resolve(props.set_infos("hide"));
+      }, 100);
     });
   };
 
@@ -40,7 +36,7 @@ const NavLeft = (props) => {
   const handle_bio_visibelity = () => {
     setTimeout(() => {
       setBio("bio");
-    }, 2000);
+    }, 1500);
   };
 
   const handle_first_bio = () => {
@@ -50,12 +46,6 @@ const NavLeft = (props) => {
     set_seconde_bio("seconde");
   };
 
-  // const hide_circle = () => {};
-
-  // const hide_greeting = () => {};
-
-  // const add_image = () => {};
-
   const translate_name = () => {
     props.set_name("translateName");
     props.set_name_span("hide");
@@ -64,7 +54,6 @@ const NavLeft = (props) => {
     props.set_small_circle("hide");
   };
 
-  // const hide_span_name = () => {};
   return (
     <div className={`navLeft ${navLeft}`}>
       <p className={`${bio} ${first_bio}`}>

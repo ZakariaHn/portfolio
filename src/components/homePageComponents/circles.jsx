@@ -26,6 +26,10 @@ const Circles = (props) => {
       <div className={`row ${props.big_circle}`}>
         <div className={`row ${props.small_circle}`}>{time}</div>
       </div>
+      <div className={props.navigator}>
+        <p>Work</p>
+        <p>services</p>
+      </div>
     </div>
   );
 };

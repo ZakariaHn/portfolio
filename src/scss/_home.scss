@@ -120,6 +120,8 @@
 .circles {
   height: 54%;
   width: 100%;
+  display: flex;
+  justify-content: center;
   .greeting {
     position: absolute;
     top: 20rem;
@@ -260,4 +262,18 @@
   letter-spacing: 0.19rem;
   display: flex;
   justify-content: center;
+}
+
+.work-services-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  width: 20rem;
+  letter-spacing: 3px;
+  opacity: 0;
+  font-size: larger;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-4rem, 30rem);
+  border-bottom: 2px solid #c2363dee;
 }
