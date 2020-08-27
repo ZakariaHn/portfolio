@@ -7,8 +7,8 @@ const WebDesignCard = () => {
       <div className="card-body">
         <h5>WEB DESIGN</h5>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
-          voluptas, accusamus error odit beatae recusandae vero, odio cum enim.
+          working with you to develop a website strategy so that your website
+          not only looks great, but works great too.
         </p>
       </div>
     </div>
