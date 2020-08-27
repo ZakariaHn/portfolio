@@ -1,0 +1,17 @@
+@mixin animate-anchores {
+  text-decoration: none;
+  background: linear-gradient(
+    to right,
+    #9c9c9c9a 50%,
+    #794244ee 25%,
+    #c2363dee
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+  &:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    background-position: -100%;
+  }
+}

@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../components/homePageComponents/navBar";
-import Circles from "../components/homePageComponents/circles";
-import NameArea from "../components/homePageComponents/nameArea";
-import ArrowDown from "../components/homePageComponents/arrowDown";
-import NavLeft from "../components/homePageComponents/navLeft";
-import WsNav from "../components/homePageComponents/workAndServicesNavComponent";
+import NavBar from "../components/home/navBar";
+import Circles from "../components/home/circles";
+import NameArea from "../components/home/nameArea";
+import ArrowDown from "../components/home/arrowDown";
+import NavLeft from "../components/home/navLeft";
 
 const HomePage = () => {
   const [jobInfos, set_infos] = useState("job-info");
@@ -40,7 +39,7 @@ const HomePage = () => {
           name={name}
           name_span={name_span}
         ></NameArea>
-        <ArrowDown></ArrowDown>
+        {/* <ArrowDown></ArrowDown> */}
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Router } from "react-router";
+import { Link } from "react-router-dom";
 
 const Circles = (props) => {
   let today = new Date(),
@@ -27,8 +29,8 @@ const Circles = (props) => {
         <div className={`row ${props.small_circle}`}>{time}</div>
       </div>
       <div className={props.navigator}>
-        <p>WORK</p>
-        <p>SERVICES</p>
+        <Link to="/work">WORK</Link>
+        <Link to="/services">SERVICES</Link>
       </div>
     </div>
   );
