@@ -1,3 +1,4 @@
+@import "variables";
 .bio {
   opacity: 0;
   text-align: justify;
@@ -10,9 +11,15 @@
   opacity: 1;
   transition: opacity 1s ease-out;
   margin: 15% 35% 0 5%;
+  border-left: $border;
+  border-top: $border;
+  padding: 0.5rem 0 0 1rem;
 }
 .seconde {
   opacity: 1;
   transition: opacity 1s ease-out;
   margin: 0 10% 20% 40%;
+  border-right: $border;
+  border-bottom: $border;
+  padding: 0 1rem 0.5rem 0;
 }

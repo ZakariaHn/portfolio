@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import NavBar from "../components/home/navBar";
+import NavBar from "../components/home/logo";
 import Circles from "../components/home/circles";
 import NameArea from "../components/home/nameArea";
-import ArrowDown from "../components/home/arrowDown";
 import NavLeft from "../components/home/navLeft";
 
 const HomePage = () => {
@@ -39,7 +37,6 @@ const HomePage = () => {
           name={name}
           name_span={name_span}
         ></NameArea>
-        {/* <ArrowDown></ArrowDown> */}
       </div>
     </div>
   );

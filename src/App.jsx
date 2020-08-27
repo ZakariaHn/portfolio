@@ -1,13 +1,14 @@
 import React from "react";
 import HomePage from "./pages/home";
-import { Route, Switch, withRouter } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import WorkPage from "./components/work/work";
+import WorkPage from "./pages/work";
+import ServecisPage from "./pages/services";
+import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
     <Switch>
       <Route path="/work" component={WorkPage} />
+      <Route path="/services" component={ServecisPage} />
       <Route path="/" component={HomePage} />
     </Switch>
   );

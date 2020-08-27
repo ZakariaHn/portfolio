@@ -1,0 +1,31 @@
+.web-design-card {
+  width: 15rem;
+  height: 18rem;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  i {
+    padding-top: 1.5rem;
+  }
+  .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 1rem;
+    h5 {
+      letter-spacing: 6px;
+      font-weight: lighter;
+      font-size: large;
+
+      margin-bottom: 1rem;
+    }
+    p {
+      letter-spacing: 1px;
+      line-height: 1.4rem;
+    }
+  }
+}
