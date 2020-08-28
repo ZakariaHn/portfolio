@@ -5,7 +5,7 @@ const WebArchCard = () => {
     <div className="web-design-card">
       <i>()</i>
       <div className="card-body">
-        <h5>WEBSITE ARCHITECTURE</h5>
+        <h5>ARCHITECTURE</h5>
         <p>
           Easy to navigate and logical page structure helps you find what you
           are looking for.

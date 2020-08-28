@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "../components/home/logo";
+import Logo from "../components/home/logo";
 import Circles from "../components/home/circles";
 import NameArea from "../components/home/nameArea";
 import NavLeft from "../components/home/navLeft";
@@ -12,10 +12,12 @@ const HomePage = () => {
   const [name, set_name] = useState("name-info");
   const [name_span, set_name_span] = useState("");
   const [navigator, set_navigator] = useState("work-services-nav");
+  const [logo, set_logo] = useState("logo");
 
   return (
     <div className="homePage">
       <NavLeft
+        set_logo={set_logo}
         set_name={set_name}
         set_infos={set_infos}
         set_greeting={set_greeting}
@@ -25,7 +27,7 @@ const HomePage = () => {
         set_small_circle={set_small_circle}
       ></NavLeft>
       <div className="homePageBody">
-        <NavBar></NavBar>
+        <Logo logo={logo} />
         <Circles
           small_circle={small_circle}
           big_circle={big_circle}

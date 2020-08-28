@@ -2,8 +2,11 @@
 @import "variables";
 .max {
   width: 190%;
-  border-right: 0.9px solid #c2363dee;
+
   transition: width 1s ease-in;
+  background-image: url("../img/tear-drops.jpg");
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.801);
 }
 
 .hide {
@@ -17,8 +20,8 @@
   filter: grayscale(1);
   width: 12rem;
   height: 12rem;
-  top: 8rem;
-  right: 10rem;
+  top: 4rem;
+  right: 9rem;
   position: absolute;
   opacity: 0.7;
   border-radius: 50%;
@@ -32,7 +35,7 @@
   letter-spacing: 0.3rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 2rem;
-  transform: translate(4.3rem, -9rem);
+  transform: translate(6.3rem, -2rem);
   content: "Zakaria Hamdan";
   transition: 1s ease-in;
   width: 15rem;
@@ -47,8 +50,8 @@
   width: 20rem;
   letter-spacing: 3px;
   opacity: 1;
-  top: 70%;
-  right: 4rem;
+  top: 75%;
+  right: 3rem;
   position: absolute;
   font-size: larger;
   font-weight: lighter;

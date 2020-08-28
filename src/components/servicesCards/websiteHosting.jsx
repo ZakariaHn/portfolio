@@ -5,7 +5,7 @@ const WebHostingCard = () => {
     <div className="web-design-card">
       <i>()</i>
       <div className="card-body">
-        <h5>WEBSITE SUPPORT</h5>
+        <h5>HOSTING</h5>
         <p>
           As your provider,taking care of all daily hosting operations: software
           updates, server management and email hosting.

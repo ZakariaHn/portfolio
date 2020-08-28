@@ -51,6 +51,7 @@ const NavLeft = (props) => {
     props.set_greeting("hide");
     props.set_small_circle("hide");
     props.set_navigator("show_work-services-nav");
+    props.set_logo("hide");
   };
 
   return (
@@ -58,7 +59,7 @@ const NavLeft = (props) => {
       <p className={`${bio} ${first_bio}`}>
         My abundant energy fuels me in the pursuit of many interests, hobbies,
         areas of study and artistic endeavor. Passionate about writing clean,
-        quality, high-performance codes and cooking both good food and music
+        quality, high-performance codes, making food and music.
       </p>
       <p to="/about" onClick={showAboutPage} className={AboutAnchore}>
         About

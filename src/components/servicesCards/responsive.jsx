@@ -5,7 +5,7 @@ const ResponisivnessCard = () => {
     <div className="web-design-card">
       <i>()</i>
       <div className="card-body">
-        <h5>Responisive</h5>
+        <h5>RESPONSIVE</h5>
         <p>
           All of my websites are developed to look and perform beautifully on
           every device you are viewing it from.

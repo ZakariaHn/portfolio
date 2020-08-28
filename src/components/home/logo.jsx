@@ -1,11 +1,11 @@
 import React from "react";
 
-const NavBar = () => {
+const Logo = (props) => {
   return (
-    <div className="logo">
+    <div className={`${props.logo}`}>
       <h4>Z H</h4>
     </div>
   );
 };
 
-export default NavBar;
+export default Logo;

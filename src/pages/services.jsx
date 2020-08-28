@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import WebDesignCard from "../components/servicesCards/webDesign";
 import ResponisivnessCard from "../components/servicesCards/responsive";
 import SeoCard from "../components/servicesCards/seo";
@@ -12,10 +12,10 @@ const ServicesPage = () => {
       <div className="row-up">
         <WebDesignCard />
         <ResponisivnessCard />
-        <SeoCard />
+        <WebArchCard />
       </div>
       <div className="row-down">
-        <WebArchCard />
+        <SeoCard />
         <WebSupportCard />
         <WebHostingCard />
       </div>
