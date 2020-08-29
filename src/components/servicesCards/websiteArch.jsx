@@ -3,7 +3,7 @@ import React from "react";
 const WebArchCard = () => {
   return (
     <div className="web-design-card">
-      <i>()</i>
+      <i class="fas fa-sitemap"></i>
       <div className="card-body">
         <h5>ARCHITECTURE</h5>
         <p>

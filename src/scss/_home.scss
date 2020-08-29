@@ -13,7 +13,6 @@
 }
 
 .logo {
-  margin-top: 1rem;
   color: #c2363dee;
   font-family: "Monoton", cursive;
   font-size: 1.6rem;
@@ -29,9 +28,8 @@
   align-items: center;
 
   .lblAbout {
-    width: 3.4rem;
+    width: 4.2rem;
     height: 1.5rem;
-
     transform: rotate(-90deg);
     letter-spacing: 4px;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +39,19 @@
     @include animate-anchores;
   }
 }
+.lblAbout {
+  width: 5rem;
+  height: 1.5rem;
 
+  letter-spacing: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+  cursor: pointer;
+  @include animate-anchores;
+  display: flex;
+  justify-content: center;
+}
 @keyframes shake {
   10%,
   90% {
@@ -73,7 +83,7 @@
   .greeting {
     position: absolute;
     top: 20rem;
-    left: 70.1rem;
+    left: 75.1rem;
     color: #c2363dee;
     letter-spacing: 0.25rem;
     font-size: 0.9rem;
@@ -83,7 +93,7 @@
     width: 12rem;
     height: 12rem;
     top: 15rem;
-    right: 15rem;
+    right: 10.5rem;
     opacity: 0.7;
     border-radius: 50%;
     position: absolute;
@@ -212,7 +222,7 @@
   width: 20rem;
   letter-spacing: 3px;
   opacity: 0;
-  font-size: larger;
+  font-size: small;
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
   transform: translate(-4rem, 30rem);

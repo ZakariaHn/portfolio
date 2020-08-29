@@ -3,7 +3,7 @@ import React from "react";
 const SeoCard = () => {
   return (
     <div className="web-design-card">
-      <i>()</i>
+      <i class="fas fa-chart-line"></i>
       <div className="card-body">
         <h5>SEO </h5>
         <p>

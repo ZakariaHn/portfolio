@@ -33,7 +33,8 @@
   background-image: url("../img/wood.jpg");
   background-size: cover;
   i {
-    padding-top: 1.5rem;
+    padding-top: 0.8rem;
+    font-size: 2rem;
   }
   .card-body {
     text-align: center;
@@ -44,9 +45,9 @@
     h5 {
       letter-spacing: 6px;
       font-weight: lighter;
-      font-size: large;
+      font-size: larger;
       color: #ebe0e0cc;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
     p {
       letter-spacing: 3px;

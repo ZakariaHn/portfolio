@@ -3,7 +3,7 @@ import React from "react";
 const WebHostingCard = () => {
   return (
     <div className="web-design-card">
-      <i>()</i>
+      <i class="fas fa-server"></i>
       <div className="card-body">
         <h5>HOSTING</h5>
         <p>

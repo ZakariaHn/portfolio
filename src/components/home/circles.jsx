@@ -31,6 +31,7 @@ const Circles = (props) => {
       <div className={props.navigator}>
         <Link to="/work">WORK</Link>
         <Link to="/services">SERVICES</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
     </div>
   );

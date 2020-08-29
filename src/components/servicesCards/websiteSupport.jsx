@@ -3,7 +3,7 @@ import React from "react";
 const WebSupportCard = () => {
   return (
     <div className="web-design-card">
-      <i>()</i>
+      <i class="fas fa-chart-pie"></i>
       <div className="card-body">
         <h5>SUPPORT</h5>
         <p>

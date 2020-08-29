@@ -2,7 +2,6 @@
 @import "variables";
 .max {
   width: 190%;
-
   transition: width 1s ease-in;
   background-image: url("../img/tear-drops.jpg");
   background-size: cover;
@@ -53,12 +52,11 @@
   top: 75%;
   right: 3rem;
   position: absolute;
-  font-size: larger;
+  font-size: small;
   font-weight: lighter;
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 2px solid #c2363dee;
   padding: 0 1rem 0 1rem;
-
   & * {
     @include animate-anchores;
   }

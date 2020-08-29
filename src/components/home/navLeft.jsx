@@ -64,6 +64,7 @@ const NavLeft = (props) => {
       <p to="/about" onClick={showAboutPage} className={AboutAnchore}>
         About
       </p>
+
       <p className={`${bio} ${seconde_bio}`}>
         I create successful websites that are fast, easy to use, and built with
         best practices plus helping designers, small agencies and businesses
