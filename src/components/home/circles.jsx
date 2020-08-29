@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 const Circles = (props) => {
   let today = new Date(),
     time = today.getHours() + ":" + today.getMinutes(),
@@ -22,16 +20,11 @@ const Circles = (props) => {
 
   return (
     <div className="circles">
-      <div className={props.greeting}>
+      <div className={"greeting"}>
         <div id="lblGreetings">{renderSpan()}</div>
       </div>
-      <div className={`row ${props.big_circle}`}>
-        <div className={`row ${props.small_circle}`}>{time}</div>
-      </div>
-      <div className={props.navigator}>
-        <Link to="/work">WORK</Link>
-        <Link to="/services">SERVICES</Link>
-        <Link to="/contact">CONTACT</Link>
+      <div className={"row big-circle"}>
+        <div className={`row small-circle`}>{time}</div>
       </div>
     </div>
   );

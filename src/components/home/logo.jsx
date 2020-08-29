@@ -1,8 +1,8 @@
 import React from "react";
 
-const Logo = (props) => {
+const Logo = () => {
   return (
-    <div className={`${props.logo}`}>
+    <div className={"logo"}>
       <h4>Z H</h4>
     </div>
   );
