@@ -5,10 +5,10 @@ const WebSupportCard = () => {
     <div className="web-design-card">
       {/* <i class="fas fa-chart-pie"></i> */}
       <div class="container five">
-        <div class="TopRight5"></div>
-        <div class="bottomRight5"></div>
-        <div class="bottomLeft5"></div>
-        <div class="topLeft5"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
       </div>
       <div className="card-body">
         <h5>SUPPORT</h5>

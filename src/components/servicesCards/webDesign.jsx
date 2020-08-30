@@ -4,7 +4,7 @@ const WebDesignCard = () => {
   return (
     <div className="web-design-card">
       {/* <i class="fas fa-spa"></i> */}
-      <div class="container first">
+      <div class="container design">
         <div class="sec-row-line-top1"></div>
         <div class="sec-row-line-mid1"></div>
         <div class="sec-row-line-down1"></div>
@@ -12,7 +12,7 @@ const WebDesignCard = () => {
       <div className="card-body">
         <h5>WEB DESIGN</h5>
         <p>
-          working with you to develop a website strategy so that your website
+          W orking with you to develop a website strategy so that your website
           not only looks great, but works great too.
         </p>
       </div>
