@@ -1,17 +1,5 @@
 @import "mixin";
 @import "variables";
-.max {
-  width: 190%;
-  transition: width 1s ease-in;
-  background-image: url("../img/tear-drops.jpg");
-  background-size: cover;
-  color: rgba(0, 0, 0, 0.801);
-}
-
-.hide {
-  opacity: 0;
-  transition: 1s;
-}
 
 .imagedCircle {
   background-image: url("../img/profile.jpg");
@@ -26,38 +14,4 @@
   border-radius: 50%;
   margin: 2rem 0 0 0rem;
   box-shadow: $box-shadow;
-}
-
-.translateName {
-  font-size: 1rem;
-  font-weight: lighter;
-  letter-spacing: 0.3rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 2rem;
-  transform: translate(6.3rem, -2rem);
-  content: "Zakaria Hamdan";
-  transition: 1s ease-in;
-  width: 15rem;
-  color: #c2363de8;
-}
-
-.show_work-services-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3rem;
-  width: 20rem;
-  letter-spacing: 3px;
-  opacity: 1;
-  top: 75%;
-  right: 3rem;
-  position: absolute;
-  font-size: small;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 2px solid #c2363dee;
-  padding: 0 1rem 0 1rem;
-  & * {
-    @include animate-anchores;
-  }
 }

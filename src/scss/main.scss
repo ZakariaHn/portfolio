@@ -2,9 +2,10 @@
 @import "about";
 @import "dynamicallyRendered ";
 @import "work";
-@import "services";
+@import "./services/cards";
+@import "./services/logos";
 @import "contact";
-
+@import "navBar";
 body {
   color: rgba(140, 140, 140, 0.993);
   background-color: rgb(12, 12, 12);
@@ -17,4 +18,40 @@ body,
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
+  cursor: none;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  // border: 1px solid #c2363d;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all 150ms ease;
+  transition-property: opacity, background-color, transform, mix-blend-mode;
+  @include centralize;
+  .inner {
+    height: 0.3rem;
+    width: 0.3rem;
+    background-color: #c2363d;
+    border-radius: 50%;
+  }
+  .left {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-top: 1px solid #c2363d;
+    border-right: 1px solid #c2363d;
+    transform: rotate(45deg);
+  }
+  .right {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-left: 1px solid #c2363d;
+    border-bottom: 1px solid #c2363d;
+    transform: rotate(45deg);
+  }
 }

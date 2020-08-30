@@ -22,10 +22,9 @@
 .navLeft {
   width: 10%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  @include centralize;
+
   .lblAbout {
     width: 4.2rem;
     height: 1.5rem;
@@ -34,7 +33,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: x-small;
-    cursor: pointer;
+
     @include animate-anchores;
   }
 }
@@ -65,8 +64,7 @@
 .circles {
   height: 54%;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  @include centralize;
   .greeting {
     position: absolute;
     top: 20rem;
@@ -191,16 +189,6 @@
     color: #c2363dee;
   }
 }
-
-// .arrowDown {
-//   width: 100%;
-//   height: 5%;
-//   font-size: larger;
-//   font-weight: lighter;
-//   letter-spacing: 0.19rem;
-//   display: flex;
-//   justify-content: center;
-// }
 
 .work-services-nav {
   display: flex;

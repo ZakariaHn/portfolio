@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Axios from "axios";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 const ContactPage = () => {
   const [form, setForm] = useState({
     name: "",
@@ -49,68 +51,104 @@ const ContactPage = () => {
         });
       });
   };
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      x: "-100vw",
+      scale: 0.8,
+    },
+    in: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+    },
+    out: {
+      opacity: 0,
+      x: "100vw",
+      scale: 1.2,
+    },
+  };
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 1,
+  };
+
+  const pageStyle = {
+    position: "absolute",
+  };
   return (
-    <div className="contact-page">
-      <div className="a">
-        <p>LET'S COMUNICATE</p>
-      </div>
-      <div className="b">
-        <form onSubmit={handleSubmit}>
-          <h5>Full Name</h5>
-          <Form.Control
-            className={"full-name"}
-            id="full-name"
-            name="name"
-            type="text"
-            value={form.name}
-            onChange={handleChange}
-          />
+    <motion.div
+      style={pageStyle}
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <div className="contact-page">
+        <div className="a">
+          <p>LET'S COMUNICATE</p>
+        </div>
+        <div className="b">
+          <form onSubmit={handleSubmit}>
+            <h5>Full Name</h5>
+            <Form.Control
+              className={"full-name"}
+              id="full-name"
+              name="name"
+              type="text"
+              value={form.name}
+              onChange={handleChange}
+            />
 
-          <h5>Email</h5>
-          <Form.Control
-            className="email"
-            id="email"
-            name="email"
-            type="email"
-            value={form.email}
-            onChange={handleChange}
-          />
+            <h5>Email</h5>
+            <Form.Control
+              className="email"
+              id="email"
+              name="email"
+              type="email"
+              value={form.email}
+              onChange={handleChange}
+            />
 
-          <h5>Message</h5>
-          <Form.Control
-            className="message"
-            id="message"
-            name="message"
-            as="textarea"
-            rows="3"
-            value={form.message}
-            onChange={handleChange}
-          />
+            <h5>Hello Zakaria,</h5>
+            <Form.Control
+              className="message"
+              id="message"
+              name="message"
+              as="textarea"
+              rows="3"
+              value={form.message}
+              placeholder="and continue here..."
+              onChange={handleChange}
+            />
 
-          <button
-            className="d-inline-block"
-            variant="primary"
-            type="submit"
-            disabled={form.disabled}
-          >
-            Send
-          </button>
+            <button
+              className="submit-button"
+              variant="primary"
+              type="submit"
+              disabled={form.disabled}
+            >
+              SUBMIT
+            </button>
 
-          {form.emailSent === true && (
-            <p className="d-inline success-msg">Email Sent</p>
-          )}
-          {form.emailSent === false && (
-            <p className="d-inline err-msg">Email Not Sent</p>
-          )}
-        </form>
+            {form.emailSent === true && (
+              <p className="d-inline success-msg">Email Sent</p>
+            )}
+            {form.emailSent === false && (
+              <p className="d-inline err-msg">Email Not Sent</p>
+            )}
+          </form>
+        </div>
+        <div className="c">
+          <div></div>
+        </div>
+        <div className="navBar">
+          <Link to="/">HOME</Link>
+        </div>
       </div>
-      <div className="c">
-        <div></div>
-      </div>
-      <div className={"show_work-services-nav"}>
-        <Link to="/">HOME</Link>
-      </div>
-    </div>
+    </motion.div>
   );
 };
 

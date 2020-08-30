@@ -8,25 +8,23 @@
 .bio {
   width: 70%;
   height: 100%;
-  text-align: justify;
   letter-spacing: 2px;
   line-height: 1.8rem;
+  color: #000000cc;
+  text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("../img/tear-drops.jpg");
   background-size: cover;
-  color: rgba(0, 0, 0, 0.801);
 }
 .first {
-  transition: opacity 1s ease-out;
-  margin: 20% 50% 2% 18%;
   border-left: $border;
   border-top: $border;
   padding: 0.5rem 0 0 1rem;
+  margin: 20% 50% 2% 18%;
 }
 .seconde {
-  transition: opacity 1s ease-out;
-  margin: 0% 18% 0% 50%;
   border-right: $border;
   border-bottom: $border;
   padding: 0 1rem 0.5rem 0;
+  margin: 0% 18% 0% 50%;
 }

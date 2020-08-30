@@ -6,25 +6,61 @@ import WebArchCard from "../components/servicesCards/websiteArch";
 import WebSupportCard from "../components/servicesCards/websiteSupport";
 import WebHostingCard from "../components/servicesCards/websiteHosting";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ServicesPage = () => {
+  const pageVariants = {
+    initial: {
+      opacity: 0,
+      x: "-100vw",
+      scale: 0.8,
+    },
+    in: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+    },
+    out: {
+      opacity: 0,
+      x: "100vw",
+      scale: 1.2,
+    },
+  };
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 1,
+  };
+
+  const pageStyle = {
+    position: "absolute",
+  };
   return (
-    <div className="services-page">
-      <div className="row-up">
-        <WebDesignCard />
-        <ResponisivnessCard />
-        <WebArchCard />
+    <motion.div
+      style={pageStyle}
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <div className="services-page">
+        <div className="row-up">
+          <WebDesignCard />
+          <ResponisivnessCard />
+          <WebArchCard />
+        </div>
+        <div className="row-down">
+          <SeoCard />
+          <WebSupportCard />
+          <WebHostingCard />
+        </div>
+        <div className="navBar">
+          <Link to="/work">WORK</Link>
+          <Link to="/contact">CONTACT</Link>
+        </div>
       </div>
-      <div className="row-down">
-        <SeoCard />
-        <WebSupportCard />
-        <WebHostingCard />
-      </div>
-      <div className={"show_work-services-nav"}>
-        <Link to="/work">WORK</Link>
-        <Link to="/contact">CONTACT</Link>
-      </div>
-    </div>
+    </motion.div>
   );
 };
 
