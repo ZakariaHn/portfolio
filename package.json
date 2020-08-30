@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "git+https://github.com/ZakariaHn/portfolio-React.git",
+  "homepage": "https://github.com/ZakariaHn/portfolio-React/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZakariaHn/portfolio-React.git"
+    "url": "git+https://github.com/ZakariaHn/portfolio-React/"
   },
   "keywords": [],
   "author": "",
@@ -43,6 +43,9 @@
     "react-switch": "^5.0.1",
     "react-transition-group": "^4.4.1",
     "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   },
   "browserslist": {
     "production": [

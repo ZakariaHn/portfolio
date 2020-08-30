@@ -12,17 +12,17 @@ const ServicesPage = () => {
   const pageVariants = {
     initial: {
       opacity: 0,
-      x: "-100vw",
+      y: "100vh",
       scale: 0.8,
     },
     in: {
       opacity: 1,
-      x: 0,
+      y: 0,
       scale: 1,
     },
     out: {
       opacity: 0,
-      x: "100vw",
+      y: "-100vh",
       scale: 1.2,
     },
   };
@@ -56,6 +56,8 @@ const ServicesPage = () => {
           <WebHostingCard />
         </div>
         <div className="navBar">
+          <Link to="/home">HOME</Link>
+          <Link to="/about">ABOUT</Link>
           <Link to="/work">WORK</Link>
           <Link to="/contact">CONTACT</Link>
         </div>

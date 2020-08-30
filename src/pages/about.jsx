@@ -5,20 +5,18 @@ const AboutPage = () => {
   const pageVariants = {
     initial: {
       opacity: 0,
-      x: "-100vw",
-      scale: 0.8,
+      scale: 0.2,
     },
     in: {
       opacity: 1,
-      x: 0,
       scale: 1,
     },
     out: {
       opacity: 0,
-      x: "100vw",
-      scale: 1.2,
+      scale: 2,
     },
   };
+
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
@@ -28,6 +26,7 @@ const AboutPage = () => {
   const pageStyle = {
     position: "absolute",
   };
+
   return (
     <motion.div
       style={pageStyle}
@@ -55,8 +54,9 @@ const AboutPage = () => {
         <div className="navigator">
           <div className={"imagedCircle"}></div>
           <div className="navBar">
-            <Link to="/work">WORK</Link>
+            <Link to="/home">HOME</Link>
             <Link to="/services">SERVICES</Link>
+            <Link to="/work">WORK</Link>
             <Link to="/contact">CONTACT</Link>
           </div>
         </div>

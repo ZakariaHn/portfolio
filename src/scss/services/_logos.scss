@@ -9,6 +9,7 @@
   @include flex-alignItemCenter-column;
   box-shadow: inset 0px 0px 10px 0px rgba(255, 86, 19, 0.555),
     0px 0px 20px 0px rgba(255, 86, 19, 0.555);
+
   div {
     background-color: transparent;
     box-shadow: $logos-box-shadow;
@@ -90,15 +91,27 @@
 
 .container.fifth {
   box-shadow: $logos-box-shadow;
+  animation: rotatefifth 2000s linear infinite;
 
   div {
     width: 1.5rem;
-    height: 1rem;
+    height: 0.8rem;
+    position: absolute;
     border-radius: 1% 90%;
     background: transparent;
     border: 1px solid rgba(255, 86, 19, 0.507);
     box-shadow: $logos-box-shadow;
-    animation: rotatefifth 20s linear infinite;
+  }
+
+  .b {
+    transform: rotate(45deg);
+  }
+  .c {
+    transform: rotate(90deg);
+  }
+  .d {
+    transform: rotate(135deg);
+    opacity: 0.7;
   }
 }
 

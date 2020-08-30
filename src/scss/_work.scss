@@ -4,13 +4,13 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+
   box-sizing: border-box;
 
   .gallery {
     width: 55vw;
     height: 70rem;
-    margin-top: 10rem;
+    margin: 5rem;
     border: 1px solid white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -31,6 +31,7 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
     .b {
       grid-column-start: 3;
       grid-column-end: 5;
@@ -42,12 +43,26 @@
     .c {
       grid-row-start: 3;
       grid-row-end: 5;
+      background-image: url("../img/workgllary/IMG_2874.JPG");
+      background-size: cover;
+      background-position: top;
     }
     .d {
       grid-column-start: 2;
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 5;
+      background-image: url("../img/workgllary/hub.png");
+      background-size: cover;
+      background-position: right;
+    }
+    .e {
+      background-image: url("../img/workgllary/IMG_2828.JPG");
+      background-size: cover;
+    }
+    .f {
+      background-image: url("../img/workgllary/IMG_2879.JPG");
+      background-size: cover;
     }
     .g {
       grid-column-start: 1;
@@ -55,9 +70,12 @@
       background-image: url("../img/css-drows.png");
       background-size: cover;
     }
+
     .h {
       grid-column-start: 1;
+      background-image: url("https://media.giphy.com/media/Xedh7R0ROHYMLKLm7T/giphy.gif");
       grid-column-end: 3;
+      background-size: contain;
     }
     .i {
       grid-column-start: 3;

@@ -13,13 +13,13 @@
   .a {
     grid-column-start: 1;
     grid-column-end: 3;
-
+    font-family: "Caveat", cursive;
     @include centralize;
     color: #1a1b1b;
     font-weight: lighter;
     font-size: xx-large;
     letter-spacing: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+
     p {
       background-color: #1d1e20;
       background-image: url("../img/paper-1074131_1920.jpg");
@@ -31,7 +31,6 @@
       opacity: 1;
       @include centralize;
     }
-    text-shadow: 1rem 0 1rem #000000cb, 0 0 1rem #000000ee;
   }
   .b {
     grid-column-start: 1;
@@ -48,12 +47,13 @@
       background-size: contain;
       background-position: bottom;
       border-radius: 10px;
+      font-family: "Caveat", cursive;
 
       h5 {
         margin-bottom: 0.5rem;
         color: #1a1b1b;
         font-weight: lighter;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
         letter-spacing: 3px;
       }
       .full-name {
@@ -62,18 +62,20 @@
       }
       .email {
         width: 50%;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         @include contactForm;
       }
       .message {
         padding-top: 0.5rem;
         width: 99%;
+        font-size: larger;
         color: black;
         @include contactForm;
+        margin-bottom: 1rem;
+        font-family: "Caveat", cursive;
         height: 5rem; // this one overwrite the hight the contactForm mixin
       }
       .submit-button {
-        margin-top: 2rem;
         width: 100%;
         letter-spacing: 4rem;
         font-weight: bolder;
@@ -88,4 +90,13 @@
     grid-row-end: 5;
     @include centralize;
   }
+}
+
+.goodBey {
+  letter-spacing: 3px;
+  margin-left: 7rem;
+  opacity: 1;
+  font-weight: bold;
+  color: #1a1b1b; // transform: translate(81rem, -3.5rem);
+  font-family: "Caveat", cursive;
 }

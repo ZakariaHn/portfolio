@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -46,6 +46,8 @@ const WorkPage = () => {
     >
       <div className="works-page">
         <div className="navBar">
+          <Link to="/home">HOME</Link>
+          <Link to="/about">ABOUT</Link>
           <Link to="/services">SERVICES</Link>
           <Link to="/contact">CONTACT</Link>
         </div>

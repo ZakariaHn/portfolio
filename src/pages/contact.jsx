@@ -12,6 +12,7 @@ const ContactPage = () => {
     disabled: false,
     emailSent: null,
   });
+
   const handleChange = (event) => {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
@@ -77,6 +78,18 @@ const ContactPage = () => {
   const pageStyle = {
     position: "absolute",
   };
+
+  let day = new Date();
+  let days = new Array(
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  );
+  const greet = "Have a good " + days[day.getDay()];
   return (
     <motion.div
       style={pageStyle}
@@ -132,7 +145,7 @@ const ContactPage = () => {
             >
               SUBMIT
             </button>
-
+            <p className="goodBey">{greet}</p>
             {form.emailSent === true && (
               <p className="d-inline success-msg">Email Sent</p>
             )}
@@ -145,7 +158,10 @@ const ContactPage = () => {
           <div></div>
         </div>
         <div className="navBar">
-          <Link to="/">HOME</Link>
+          <Link to="/home">HOME</Link>
+          <Link to="/about">ABOUT</Link>
+          <Link to="/services">SERVICES</Link>
+          <Link to="/work">WORK</Link>
         </div>
       </div>
     </motion.div>
