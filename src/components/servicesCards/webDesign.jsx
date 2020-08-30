@@ -3,7 +3,12 @@ import React from "react";
 const WebDesignCard = () => {
   return (
     <div className="web-design-card">
-      <i class="fas fa-spa"></i>
+      {/* <i class="fas fa-spa"></i> */}
+      <div class="container first">
+        <div class="sec-row-line-top1"></div>
+        <div class="sec-row-line-mid1"></div>
+        <div class="sec-row-line-down1"></div>
+      </div>
       <div className="card-body">
         <h5>WEB DESIGN</h5>
         <p>

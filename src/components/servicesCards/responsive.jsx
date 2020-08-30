@@ -2,7 +2,12 @@ import React from "react";
 const ResponisivnessCard = () => {
   return (
     <div className="web-design-card">
-      <i class="fas fa-expand-arrows-alt"></i>
+      {/* <i class="fas fa-expand-arrows-alt"></i> */}
+
+      <div class="container thethird">
+        <div class="earth"></div>
+        <div class="moon"></div>
+      </div>
       <div className="card-body">
         <h5>RESPONSIVE</h5>
         <p>

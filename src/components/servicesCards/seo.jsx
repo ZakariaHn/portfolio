@@ -3,7 +3,12 @@ import React from "react";
 const SeoCard = () => {
   return (
     <div className="web-design-card">
-      <i class="fas fa-chart-line"></i>
+      {/* <i class="fas fa-chart-line"></i> */}
+      <div class="container theforth">
+        <div>
+          <div class="little"></div>
+        </div>
+      </div>
       <div className="card-body">
         <h5>SEO </h5>
         <p>

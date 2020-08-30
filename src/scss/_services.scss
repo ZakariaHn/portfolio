@@ -12,6 +12,9 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    margin-top: 1rem;
+  }
+  .row-up {
     margin-top: 2rem;
   }
 }
@@ -57,5 +60,268 @@
       font-size: 0.9rem;
       color: #d3c8c8cc;
     }
+  }
+}
+
+.container.five {
+  box-shadow: inset 0 0 0.36rem 0 rgba(238, 175, 150, 0.555),
+    inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9), 0 0 2rem 0 rgba(255, 86, 19, 0.555);
+}
+
+.container.five div {
+  box-shadow: 0px 10px rgba(255, 86, 19, 0.555);
+}
+
+.container .TopRight5 {
+  transform: rotate(45deg) translate(0.5rem, -0.5rem);
+}
+
+.container .bottomRight5 {
+  transform: rotate(135deg) translate(0.1rem, 0.2rem);
+}
+
+.container .bottomLeft5 {
+  transform: rotate(315deg) translate(0.2rem, 0.1em);
+}
+
+.container .topLeft5 {
+  transform: rotate(224deg) translate(0.6rem, -0.4rem);
+}
+
+.all {
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  height: 10rem;
+}
+
+.container div {
+  background-color: transparent;
+  box-shadow: 0 0 1rem 0 rgba(255, 86, 19, 0.555),
+    0 0 0.2rem 0 rgba(235, 145, 110, 0.555),
+    inset 0 0 0.21rem 0 rgba(0, 0, 0, 0.377),
+    inset 0 0 0.36rem 0 rgba(149, 235, 143, 0.308);
+}
+
+.container {
+  height: 7rem;
+  width: 7rem;
+  background: linear-gradient(0deg, rgb(41, 41, 41), rgb(12, 12, 12));
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2.5rem 0 2.5rem 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+  transition: 1.5s;
+  background-color: rgba(255, 86, 19, 0.075);
+}
+
+.container * {
+  width: 2.5rem;
+  height: 0.12rem;
+  background-color: #9c9c9c;
+  transition: 1.5s;
+}
+
+.container {
+  cursor: none;
+  transition: 1.5;
+  transform: scale(0.9, 0.9);
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 86, 19, 0.555),
+    0px 0px 20px 0px rgba(255, 86, 19, 0.555);
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 86, 19, 0.048),
+    rgb(41, 41, 41)
+  );
+}
+
+.container div {
+  background-color: rgba(255, 86, 19, 0.555);
+  width: 2rem;
+  height: 0.12rem;
+}
+
+/*________________________ Architecture_______________________*/
+
+.container.third {
+  box-shadow: inset 0 0 0.36rem 0 rgba(149, 235, 143, 0.308),
+    inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9), 0 0 2rem 0 rgba(255, 86, 19, 0.555);
+}
+
+.container.third * {
+  box-shadow: inset 0 0 0.36rem 0 rgba(255, 86, 19, 0.555),
+    inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9), 0 0 2rem 0 rgba(255, 86, 19, 0.555);
+}
+
+.container .sec-row-line-top3 {
+  width: 3rem;
+}
+
+.container .sec-row-line-mid3 {
+  box-shadow: inset 0 0 0.36rem 0 rgba(149, 235, 143, 0.308),
+    inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9), 0 0 2rem 0 rgba(255, 86, 19, 0.555);
+}
+
+.container .sec-row-line-bottom3 {
+  width: 0.8rem;
+}
+
+// ======================== design card logo
+.container.first {
+  transform: rotate(-90deg) scale(0.9);
+  margin: 0;
+}
+
+.container.first,
+.container.first * {
+  box-shadow: inset 0 0 0.36rem 0 rgba(149, 235, 143, 0.308),
+    inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9),
+    0 0 1.25rem 0 rgba(255, 86, 19, 0.555);
+}
+
+.container .sec-row-line-top1,
+.container .sec-row-line-down1 {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 86, 19, 0.74);
+  opacity: 0.7;
+}
+
+.container .sec-row-line-top1 {
+  border-radius: 1% 90%;
+  transform: rotate(300deg);
+}
+
+.container .sec-row-line-mid1 {
+  opacity: 0.5;
+  transform: translatex(0.5rem);
+}
+
+.container .sec-row-line-down1 {
+  border-radius: 90% 1%;
+  transform: rotate(-300deg);
+}
+
+//=================== seo
+
+.container.theforth {
+  padding: 0;
+  opacity: 0.7;
+  border: none;
+  background: black;
+  transform: rotate(1deg);
+
+  animation: spin4 1s linear infinite;
+}
+
+.container.theforth .little {
+  width: 0.3rem;
+  height: 0.3rem;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0.4rem 0.5rem 0 rgba(66, 158, 59, 0.63),
+    inset 0.1rem 0.4rem 0.6rem 0 rgba(90, 199, 199, 0.726),
+    0 0 1.25rem 0 rgba(255, 86, 19, 0.555),
+    0 0 1rem 0 rgba(216, 157, 133, 0.555), 0 0 1rem 0 rgba(186, 219, 110, 0.555);
+}
+
+.container.theforth div {
+  width: 4.9rem;
+  height: 4.9rem;
+  border: none;
+  box-shadow: none;
+
+  border-radius: 50%;
+}
+
+@keyframes spin4 {
+  100% {
+    transform: rotate(90000deg);
+  }
+}
+
+/*_________________________support_________________________ */
+
+.container.thethird {
+  padding: 0;
+  opacity: 0.7;
+  background: black;
+
+  animation: spin2 20s linear infinite;
+  box-shadow: inset 0 0 0.5rem 0 rgba(128, 238, 120, 0.534),
+    inset 0 0 1rem 0 rgba(0, 0, 0, 0.9), 0 0 1.25rem 0 rgba(255, 86, 19, 0.555),
+    0 0 1rem 0 rgba(216, 157, 133, 0.555), 0 0 1rem 0 rgba(186, 219, 110, 0.555);
+}
+
+.container.thethird .earth {
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  z-index: 1;
+  border-radius: 50%;
+  background: transparent;
+  animation: spin3 20s linear infinite;
+}
+
+.container.thethird .moon {
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: black;
+  animation: spin3 20s linear infinite;
+}
+
+@keyframes spin3 {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+// ================ hosting
+.container.thesecond {
+  padding: 0;
+  opacity: 0.7;
+  background: black;
+  transform: rotate(1deg);
+  background-color: transparent;
+  animation: spin 20s linear infinite;
+}
+
+.container.thesecond .little {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border-radius: 50%;
+  background: black;
+  animation: spin 10s linear infinite;
+  box-shadow: inset 0 0.4rem 0.5rem 0 rgba(66, 158, 59, 0.63),
+    inset 0.1rem 0.4rem 0.6rem 0 rgba(90, 199, 199, 0.726),
+    0 0 1.25rem 0 rgba(255, 86, 19, 0.555),
+    0 0 1rem 0 rgba(216, 157, 133, 0.555), 0 0 1rem 0 rgba(186, 219, 110, 0.555);
+}
+
+.container.thesecond div {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }

@@ -5,6 +5,7 @@ import SeoCard from "../components/servicesCards/seo";
 import WebArchCard from "../components/servicesCards/websiteArch";
 import WebSupportCard from "../components/servicesCards/websiteSupport";
 import WebHostingCard from "../components/servicesCards/websiteHosting";
+import { Link } from "react-router-dom";
 
 const ServicesPage = () => {
   return (
@@ -18,6 +19,10 @@ const ServicesPage = () => {
         <SeoCard />
         <WebSupportCard />
         <WebHostingCard />
+      </div>
+      <div className={"show_work-services-nav"}>
+        <Link to="/work">WORK</Link>
+        <Link to="/contact">CONTACT</Link>
       </div>
     </div>
   );

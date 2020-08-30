@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 const ContactPage = () => {
   const [form, setForm] = useState({
     name: "",
@@ -105,6 +106,9 @@ const ContactPage = () => {
       </div>
       <div className="c">
         <div></div>
+      </div>
+      <div className={"show_work-services-nav"}>
+        <Link to="/">HOME</Link>
       </div>
     </div>
   );
