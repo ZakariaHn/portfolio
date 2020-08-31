@@ -1,17 +1,1 @@
-@import "mixin";
-@import "variables";
 
-.imagedCircle {
-  background-image: url("../img/profile.jpg");
-  background-size: cover;
-  filter: grayscale(1);
-  width: 12rem;
-  height: 12rem;
-  top: 4rem;
-  right: 9rem;
-  position: absolute;
-  opacity: 0.7;
-  border-radius: 50%;
-  margin: 2rem 0 0 0rem;
-  box-shadow: $box-shadow;
-}

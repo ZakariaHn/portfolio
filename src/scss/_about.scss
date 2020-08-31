@@ -4,27 +4,148 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  .bio {
+    width: 70%;
+    height: 100%;
+    letter-spacing: 2px;
+    line-height: 1.8rem;
+    color: #000000cc;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/tear-drops.jpg");
+    background-size: cover;
+
+    .first {
+      border-left: $border;
+      border-top: $border;
+      padding: 0.5rem 0 0 1rem;
+      margin: 20% 50% 2% 18%;
+    }
+    .seconde {
+      border-right: $border;
+      border-bottom: $border;
+      padding: 0 1rem 0.5rem 0;
+      margin: 0% 18% 0% 50%;
+    }
+  }
+  .navigator {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .imagedCircle {
+      background-image: url("../img/profile.jpg");
+      background-size: cover;
+      filter: grayscale(1);
+      width: 12rem;
+      height: 12rem;
+      opacity: 0.7;
+      border-radius: 50%;
+      margin: 2rem 0 0 0rem;
+      box-shadow: $box-shadow;
+    }
+  }
 }
-.bio {
-  width: 70%;
-  height: 100%;
-  letter-spacing: 2px;
-  line-height: 1.8rem;
-  color: #000000cc;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/tear-drops.jpg");
-  background-size: cover;
+
+@media screen and (max-width: 1100px) {
+  .about-page {
+    .bio {
+      .first {
+        margin: 20% 50% 1% 8%;
+      }
+      .seconde {
+        margin: 0% 11% 0% 50%;
+      }
+    }
+    .navigator {
+      display: flex;
+      justify-content: center;
+      .imagedCiecle {
+        position: absolute;
+        top: 0;
+        right: 10;
+      }
+      .navBar {
+        height: 10rem;
+        width: 10rem;
+        top: 65%;
+        margin: 0 1rem 1rem 0;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+      }
+    }
+  }
 }
-.first {
-  border-left: $border;
-  border-top: $border;
-  padding: 0.5rem 0 0 1rem;
-  margin: 20% 50% 2% 18%;
+
+@media screen and (max-width: 768px) {
+  .about-page {
+    .bio {
+      .first {
+        margin: 82% 10% 1% 8%;
+        padding-right: 1rem;
+        border-right: $border;
+      }
+      .seconde {
+        margin: 30% 10% 0% 8%;
+        padding-left: 1rem;
+        border-left: $border;
+      }
+    }
+    .navigator {
+      .imagedCircle {
+        margin-top: 7rem;
+        border-radius: 4px;
+        height: 20rem;
+        right: 10;
+      }
+      .navBar {
+        width: 8rem;
+        top: 67.7%;
+        margin: 0 -1rem 0 5rem;
+      }
+    }
+  }
 }
-.seconde {
-  border-right: $border;
-  border-bottom: $border;
-  padding: 0 1rem 0.5rem 0;
-  margin: 0% 18% 0% 50%;
+
+@media screen and (max-width: 360px) {
+  .about-page {
+    background-size: contain;
+    .bio {
+      width: 100vw;
+      .first {
+        margin: 30rem 10% 1% 8%;
+        padding-right: 1rem;
+        border-right: $border;
+      }
+      .seconde {
+        margin: 15% 10% 10% 8%;
+        padding-left: 1rem;
+        border-left: $border;
+        color: gray;
+      }
+    }
+    .navigator {
+      width: 0;
+      .imagedCircle {
+        position: absolute;
+        opacity: 1;
+        margin: 9rem 22rem 0 0;
+        width: 70%;
+      }
+      .navBar {
+        display: flex;
+        position: absolute;
+        width: 90vw;
+        height: 2.5rem;
+        top: 0;
+        right: 0;
+        border: none;
+        margin: 1.2rem 0 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
 }

@@ -2,8 +2,7 @@ import React from "react";
 
 const WebDesignCard = () => {
   return (
-    <div className="web-design-card">
-      {/* <i class="fas fa-spa"></i> */}
+    <div className="card">
       <div class="container design">
         <div class="sec-row-line-top1"></div>
         <div class="sec-row-line-mid1"></div>

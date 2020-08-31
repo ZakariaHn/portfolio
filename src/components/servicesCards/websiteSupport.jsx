@@ -2,8 +2,7 @@ import React from "react";
 
 const WebSupportCard = () => {
   return (
-    <div className="web-design-card">
-      {/* <i class="fas fa-chart-pie"></i> */}
+    <div className="card">
       <div class="container five">
         <div class="a"></div>
         <div class="b"></div>

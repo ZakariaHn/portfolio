@@ -97,6 +97,38 @@
   margin-left: 7rem;
   opacity: 1;
   font-weight: bold;
-  color: #1a1b1b; // transform: translate(81rem, -3.5rem);
+  color: #1a1b1b;
   font-family: "Caveat", cursive;
+}
+
+@media screen and (max-width: 720px) {
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .a {
+      margin-top: -5rem;
+    }
+
+    .b {
+      display: flex;
+      justify-content: center;
+      form {
+        width: 85%;
+        margin: 0;
+        height: 100%;
+        p {
+          margin-left: 13rem;
+        }
+      }
+    }
+    .navBar {
+      width: 82%;
+      margin-top: 6rem;
+    }
+    // .c {
+    // }
+    // .navBar {
+    // }
+  }
 }

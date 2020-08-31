@@ -2,8 +2,7 @@ import React from "react";
 
 const WebArchCard = () => {
   return (
-    <div className="web-design-card">
-      {/* <i class="fas fa-sitemap"></i> */}
+    <div className="card">
       <div class="container third">
         <div class="sec-row-line-top3"></div>
         <div class="sec-row-line-mid3"></div>

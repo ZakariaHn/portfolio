@@ -20,7 +20,7 @@
   }
 }
 
-.web-design-card {
+.card {
   width: 30%;
   height: 13rem;
   padding: 1rem;
@@ -47,6 +47,147 @@
       font-size: 0.9rem;
       padding: 0 2rem 0 2rem;
       @include servicesCards;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services-page {
+    background-size: cover;
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    background-size: cover;
+    padding-left: 0;
+    .row-up,
+    .row-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .card {
+      margin-top: 1rem;
+      width: 100vw;
+      font-size: small;
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .card {
+    .card-body {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    margin: 1rem;
+    height: 15rem;
+    .row-up,
+    .row-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .card-body {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .card {
+    margin: 1rem;
+    height: 17rem;
+    .row-up,
+    .row-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .card-body {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .services-page {
+    .row-up,
+    .row-down {
+      width: 100%;
+      margin: 0;
+    }
+    .card {
+      width: 30rem;
+      margin: 0.5rem;
+      height: 17rem;
+
+      .card-body {
+        p {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-page {
+    background-image: none;
+    background-color: lightgray;
+    .row-up,
+    .row-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      background-color: lightgray;
+    }
+
+    .card {
+      height: 12rem;
+      margin-top: 1rem;
+      width: 90vw;
+      font-size: small;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services-page {
+    .row-up,
+    .row-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .card {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      margin-left: 0.8rem;
+      width: 90vw;
+      height: 17rem;
+      font-size: small;
+      h5 {
+        padding: 1.5rem 0 1rem 0;
+      }
     }
   }
 }
