@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "//zakariahn.github.io/portfolio-React/static/css/main.9d11feee.chunk.css",
-    "main.js": "//zakariahn.github.io/portfolio-React/static/js/main.bab75f91.chunk.js",
-    "main.js.map": "//zakariahn.github.io/portfolio-React/static/js/main.bab75f91.chunk.js.map",
-    "runtime-main.js": "//zakariahn.github.io/portfolio-React/static/js/runtime-main.bfd62e92.js",
-    "runtime-main.js.map": "//zakariahn.github.io/portfolio-React/static/js/runtime-main.bfd62e92.js.map",
-    "static/js/2.354ce9f4.chunk.js": "//zakariahn.github.io/portfolio-React/static/js/2.354ce9f4.chunk.js",
-    "static/js/2.354ce9f4.chunk.js.map": "//zakariahn.github.io/portfolio-React/static/js/2.354ce9f4.chunk.js.map",
-    "index.html": "//zakariahn.github.io/portfolio-React/index.html",
-    "precache-manifest.c51228745d6a914c87bd9d4e740e2848.js": "//zakariahn.github.io/portfolio-React/precache-manifest.c51228745d6a914c87bd9d4e740e2848.js",
-    "service-worker.js": "//zakariahn.github.io/portfolio-React/service-worker.js",
-    "static/css/main.9d11feee.chunk.css.map": "//zakariahn.github.io/portfolio-React/static/css/main.9d11feee.chunk.css.map",
-    "static/js/2.354ce9f4.chunk.js.LICENSE.txt": "//zakariahn.github.io/portfolio-React/static/js/2.354ce9f4.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "//zakariahn.github.io/portfolio-React/static/media/wood.7cb59cdd.jpg"
+    "main.css": "/ZakariaHn/portfolio-React/static/css/main.1da7b97b.chunk.css",
+    "main.js": "/ZakariaHn/portfolio-React/static/js/main.7170baec.chunk.js",
+    "main.js.map": "/ZakariaHn/portfolio-React/static/js/main.7170baec.chunk.js.map",
+    "runtime-main.js": "/ZakariaHn/portfolio-React/static/js/runtime-main.3d362591.js",
+    "runtime-main.js.map": "/ZakariaHn/portfolio-React/static/js/runtime-main.3d362591.js.map",
+    "static/js/2.01ec1337.chunk.js": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js",
+    "static/js/2.01ec1337.chunk.js.map": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js.map",
+    "index.html": "/ZakariaHn/portfolio-React/index.html",
+    "precache-manifest.4ad7e6933198f8e601277d4f6d6ce2ae.js": "/ZakariaHn/portfolio-React/precache-manifest.4ad7e6933198f8e601277d4f6d6ce2ae.js",
+    "service-worker.js": "/ZakariaHn/portfolio-React/service-worker.js",
+    "static/css/main.1da7b97b.chunk.css.map": "/ZakariaHn/portfolio-React/static/css/main.1da7b97b.chunk.css.map",
+    "static/js/2.01ec1337.chunk.js.LICENSE.txt": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/ZakariaHn/portfolio-React/static/media/wood.7cb59cdd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bfd62e92.js",
-    "static/js/2.354ce9f4.chunk.js",
-    "static/css/main.9d11feee.chunk.css",
-    "static/js/main.bab75f91.chunk.js"
+    "static/js/runtime-main.3d362591.js",
+    "static/js/2.01ec1337.chunk.js",
+    "static/css/main.1da7b97b.chunk.css",
+    "static/js/main.7170baec.chunk.js"
   ]
 }
