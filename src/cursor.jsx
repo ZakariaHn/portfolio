@@ -64,7 +64,6 @@ const Cursor = () => {
   return (
     <div
       className={cursorClasses}
-      className="cursor"
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,

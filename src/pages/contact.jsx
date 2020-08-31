@@ -80,15 +80,15 @@ const ContactPage = () => {
   };
 
   let day = new Date();
-  let days = new Array(
-    "Sunday",
+  let days = new Array[
+    ("Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
-  );
+    "Saturday")
+  ]();
   const greet = "Have a good " + days[day.getDay()];
   return (
     <motion.div

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://https://zakariahn.github.io/portfolio-React/",
+  "homepage": "https://github.com/ZakariaHn/portfolio-React/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
