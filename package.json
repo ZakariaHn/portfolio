@@ -3,24 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zakariahn.github.io/portfolio-React/build",
+  "homepage": "https://zakariahn.github.io/portfolio-React/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fix-memory-limit": "cross-env LIMIT=2048 increase-memory-limit"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://zakariahn.github.io/portfolio-React/"
+    "url": "git+https://github.com/ZakariaHn/portfolio-React/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://zakariahn.github.io/portfolio-React/issues"
+    "url": "https://github.com/ZakariaHn/portfolio-React/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
