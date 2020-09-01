@@ -1,34 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { motion } from "framer-motion";
 import Biography from "../components/work/biography";
 import NavPicArea from "../components/work/navPicArea";
 
 const AboutPage = () => {
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      scale: 0.2,
+  const [transitions] = useState({
+    pageVariants: {
+      initial: {
+        opacity: 0,
+        scale: 0.2,
+      },
+      in: {
+        opacity: 1,
+        scale: 1,
+      },
+      out: {
+        opacity: 0,
+        scale: 2,
+      },
     },
-    in: {
-      opacity: 1,
-      scale: 1,
+    pageTransition: {
+      type: "tween",
+      ease: "anticipate",
+      duration: 1,
     },
-    out: {
-      opacity: 0,
-      scale: 2,
+    pageStyle: {
+      position: "absolute",
     },
-  };
+  });
 
-  const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1,
-  };
-
-  const pageStyle = {
-    position: "absolute",
-  };
+  const { pageStyle, pageVariants, pageTransition } = transitions;
 
   return (
     <motion.div

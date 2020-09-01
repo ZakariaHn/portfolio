@@ -4,32 +4,35 @@ import { motion } from "framer-motion";
 import NavBar from "../components/contact/navBar";
 
 const ContactPage = () => {
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      x: "-100vw",
-      scale: 0.8,
+  const [transitions] = useState({
+    pageVariants: {
+      initial: {
+        opacity: 0,
+        x: "-100vw",
+        scale: 0.8,
+      },
+      in: {
+        opacity: 1,
+        x: 0,
+        scale: 1,
+      },
+      out: {
+        opacity: 0,
+        x: "100vw",
+        scale: 1.2,
+      },
     },
-    in: {
-      opacity: 1,
-      x: 0,
-      scale: 1,
+    pageTransition: {
+      type: "tween",
+      ease: "anticipate",
+      duration: 1,
     },
-    out: {
-      opacity: 0,
-      x: "100vw",
-      scale: 1.2,
+    pageStyle: {
+      position: "absolute",
     },
-  };
-  const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1,
-  };
+  });
+  const { pageStyle, pageVariants, pageTransition } = transitions;
 
-  const pageStyle = {
-    position: "absolute",
-  };
   return (
     <motion.div
       style={pageStyle}
@@ -56,12 +59,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-//   let day=new Date()
-//                       let days=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
-//                       document.getElementById('goodday').innerHTML ="Have a good " + days[day.getDay()]
-{
-  /* <div className="good-day">
-<label id="goodday"></label>
-</div> */
-}

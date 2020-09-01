@@ -5,6 +5,7 @@ import AboutPage from "./pages/about";
 import Cursor from "./cursor";
 import ContactPage from "./pages/contact";
 import ServicesPage from "./pages/services";
+import functions from "./helpers";
 import { AnimatePresence } from "framer-motion";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";

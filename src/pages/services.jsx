@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import WebDesignCard from "../components/servicesCards/webDesign";
 import ResponisivnessCard from "../components/servicesCards/responsive";
 import SeoCard from "../components/servicesCards/seo";
@@ -9,32 +9,36 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const ServicesPage = () => {
-  const pageVariants = {
-    initial: {
-      opacity: 0,
-      y: "100vh",
-      scale: 0.8,
+  const [transitions] = useState({
+    pageVariants: {
+      initial: {
+        opacity: 0,
+        y: "100vh",
+        scale: 0.8,
+      },
+      in: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      },
+      out: {
+        opacity: 0,
+        y: "-100vh",
+        scale: 1.2,
+      },
     },
-    in: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
+    pageTransition: {
+      type: "tween",
+      ease: "anticipate",
+      duration: 1,
     },
-    out: {
-      opacity: 0,
-      y: "-100vh",
-      scale: 1.2,
+    pageStyle: {
+      position: "absolute",
     },
-  };
-  const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 1,
-  };
+  });
 
-  const pageStyle = {
-    position: "absolute",
-  };
+  const { pageStyle, pageVariants, pageTransition } = transitions;
+
   return (
     <motion.div
       style={pageStyle}
