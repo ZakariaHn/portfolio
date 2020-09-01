@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ZakariaHn/portfolio-React/static/css/main.1da7b97b.chunk.css",
+    "main.js": "/ZakariaHn/portfolio-React/static/js/main.7170baec.chunk.js",
+    "main.js.map": "/ZakariaHn/portfolio-React/static/js/main.7170baec.chunk.js.map",
+    "runtime-main.js": "/ZakariaHn/portfolio-React/static/js/runtime-main.3d362591.js",
+    "runtime-main.js.map": "/ZakariaHn/portfolio-React/static/js/runtime-main.3d362591.js.map",
+    "static/js/2.01ec1337.chunk.js": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js",
+    "static/js/2.01ec1337.chunk.js.map": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js.map",
+    "index.html": "/ZakariaHn/portfolio-React/index.html",
+    "precache-manifest.4ad7e6933198f8e601277d4f6d6ce2ae.js": "/ZakariaHn/portfolio-React/precache-manifest.4ad7e6933198f8e601277d4f6d6ce2ae.js",
+    "service-worker.js": "/ZakariaHn/portfolio-React/service-worker.js",
+    "static/css/main.1da7b97b.chunk.css.map": "/ZakariaHn/portfolio-React/static/css/main.1da7b97b.chunk.css.map",
+    "static/js/2.01ec1337.chunk.js.LICENSE.txt": "/ZakariaHn/portfolio-React/static/js/2.01ec1337.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/ZakariaHn/portfolio-React/static/media/wood.7cb59cdd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d362591.js",
+    "static/js/2.01ec1337.chunk.js",
+    "static/css/main.1da7b97b.chunk.css",
+    "static/js/main.7170baec.chunk.js"
+  ]
+}
