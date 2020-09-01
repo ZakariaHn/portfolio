@@ -1,6 +1,6 @@
 import React from "react";
 
-const Circles = (props) => {
+const Circles = () => {
   let today = new Date(),
     time = today.getHours() + ":" + today.getMinutes(),
     hrs = today.getHours();

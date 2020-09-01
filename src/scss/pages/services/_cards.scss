@@ -15,8 +15,18 @@
     margin-top: 2rem;
   }
   .navBar {
-    margin: 5rem 65rem;
+    margin: 6rem 65rem;
     font-weight: normal;
+    background: linear-gradient(
+      to right,
+      #f1e9e9dc 50%,
+      #794244ee 25%,
+      #c2363dee
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-in-out;
   }
 }
 

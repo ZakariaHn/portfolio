@@ -176,12 +176,13 @@
   width: 100%;
 
   .name-info {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     letter-spacing: 0.25rem; // mixin
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 2rem;
     margin-bottom: 4rem;
+    color: rgba(140, 140, 140, 0.993);
   }
   .job-info {
     font-size: 1.3rem;
