@@ -49,10 +49,18 @@ const WorkPage = () => {
     >
       <div className="works-page">
         <div className="navBar">
-          <Link to="/home">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/services">SERVICES</Link>
-          <Link to="/contact">CONTACT</Link>
+          <Link className="z" to="/home">
+            HOME
+          </Link>
+          <Link className="z" to="/about">
+            ABOUT
+          </Link>
+          <Link className="z" to="/services">
+            SERVICES
+          </Link>
+          <Link className="z" to="/contact">
+            CONTACT
+          </Link>
         </div>
         <div className="gallery">{renderDivs()}</div>
       </div>

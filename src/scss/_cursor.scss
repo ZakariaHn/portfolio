@@ -24,15 +24,31 @@
   .left {
     height: 0.5rem;
     width: 0.5rem;
-    border-top: 1px solid #c2363d;
-    border-right: 1px solid #c2363d;
+    border-top: 2px solid #c2363d;
+    border-right: 2px solid #c2363d;
     transform: rotate(45deg);
   }
   .right {
     height: 0.5rem;
     width: 0.5rem;
-    border-left: 1px solid #c2363d;
-    border-bottom: 1px solid #c2363d;
+    border-left: 2px solid #c2363d;
+    border-bottom: 2px solid #c2363d;
     transform: rotate(45deg);
+  }
+}
+.cursor--link-hovered {
+  .inner {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #c2363d;
+    border-radius: 50%;
+  }
+}
+
+.cursor--clicked {
+  transition: 1s ease-in-out;
+  .inner {
+    opacity: 0.4;
+    transform: scale(8);
   }
 }

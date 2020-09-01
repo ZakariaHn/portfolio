@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { motion } from "framer-motion";
 import Biography from "../components/work/biography";
-import NavPicArea from "../components/work/navPicArea";
+import NavPicArea from "../components/about/navPicArea";
 
 const AboutPage = () => {
   const [transitions] = useState({

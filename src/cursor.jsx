@@ -13,7 +13,7 @@ const Cursor = () => {
   }, []);
 
   const handleLinkHoverEvents = () => {
-    document.querySelectorAll("a").forEach((el) => {
+    document.querySelectorAll(".z").forEach((el) => {
       el.addEventListener("mouseover", () => setLinkHovered(true));
       el.addEventListener("mouseout", () => setLinkHovered(false));
     });
