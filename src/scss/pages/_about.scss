@@ -1,5 +1,3 @@
-@import "variables";
-
 .about-page {
   width: 100vw;
   height: 100vh;
@@ -12,7 +10,7 @@
     color: #000000cc;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../img/tear-drops.jpg");
+    background-image: url("../../img/tear-drops.jpg");
     background-size: cover;
 
     .first {
@@ -34,7 +32,7 @@
     display: flex;
     justify-content: center;
     .imagedCircle {
-      background-image: url("../img/profile.jpg");
+      background-image: url("../../img/profile.jpg");
       background-size: cover;
       filter: grayscale(1);
       width: 12rem;

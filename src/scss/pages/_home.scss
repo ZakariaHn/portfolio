@@ -1,5 +1,5 @@
-@import "mixin";
-@import "variables";
+@import "../abstract/variables";
+@import "../abstract/mixin";
 
 .homePage {
   width: 100vw;
@@ -68,7 +68,7 @@
   .greeting {
     position: absolute;
     top: 20rem;
-    left: 75.1rem;
+    left: 74.1rem;
     color: #c2363dee;
     letter-spacing: 0.25rem;
     font-size: 0.9rem;

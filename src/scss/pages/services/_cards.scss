@@ -3,7 +3,7 @@
   height: 100vh;
   background-size: 110%;
   background-position: top;
-  background-image: url("../../img/wall.jpg");
+  background-image: url("../../../img/wall.jpg");
   @include flex-alignItemCenter-column;
 
   .row-down {
@@ -27,7 +27,7 @@
   border-radius: 0.25rem;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../../img/wood.jpg");
+  background-image: url("../../../img/wood.jpg");
   @include flex-alignItemCenter-column; // could be edited
 
   i {

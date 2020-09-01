@@ -1,9 +1,9 @@
-@import "variables";
-@import "mixin";
+@import "../abstract/variables";
+@import "../abstract/mixin";
 .contact-page {
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/wall.jpg");
+  background-image: url("../../img/wall.jpg");
   background-size: cover;
   background-position: bottom;
   display: grid;
@@ -22,7 +22,7 @@
 
     p {
       background-color: #1d1e20;
-      background-image: url("../img/paper-1074131_1920.jpg");
+      background-image: url("../../img/paper-1074131_1920.jpg");
       background-size: contain;
       background-position: bottom;
       width: 100%;
@@ -39,11 +39,11 @@
     grid-row-end: 5;
     form {
       padding: 0 1rem 0 1rem;
-      margin: 10% 0 0 5%;
+      margin: 5% 0 0 5%;
       width: 50%;
-      height: 80%;
+      height: 83%;
       border: 2px solid wheat;
-      background-image: url("../img/paper-1074131_1920.jpg");
+      background-image: url("../../img/paper-1074131_1920.jpg");
       background-size: contain;
       background-position: bottom;
       border-radius: 10px;
