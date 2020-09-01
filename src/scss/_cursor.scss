@@ -5,15 +5,12 @@
 .cursor {
   width: 40px;
   height: 40px;
-  // border: 1px solid #c2363d;
-  border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
-  transition: all 150ms ease;
-  transition-property: opacity, background-color, transform, mix-blend-mode;
+
   @include centralize;
   .inner {
     height: 0.3rem;
@@ -24,15 +21,15 @@
   .left {
     height: 0.5rem;
     width: 0.5rem;
-    border-top: 2px solid #c2363d;
-    border-right: 2px solid #c2363d;
+    border-top: $cursor-borders;
+    border-right: $cursor-borders;
     transform: rotate(45deg);
   }
   .right {
     height: 0.5rem;
     width: 0.5rem;
-    border-left: 2px solid #c2363d;
-    border-bottom: 2px solid #c2363d;
+    border-left: $cursor-borders;
+    border-bottom: $cursor-borders;
     transform: rotate(45deg);
   }
 }
@@ -46,8 +43,8 @@
 }
 
 .cursor--clicked {
-  transition: 1s ease-in-out;
   .inner {
+    background-color: #be6d71;
     opacity: 0.4;
     transform: scale(8);
   }

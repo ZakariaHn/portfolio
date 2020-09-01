@@ -61,32 +61,6 @@
   }
 }
 
-@media screen and (max-width: 320px) {
-  .services-page {
-    background-size: cover;
-
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    background-size: cover;
-    padding-left: 0;
-    .row-up,
-    .row-down {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: 0;
-    }
-
-    .card {
-      margin-top: 1rem;
-      width: 100vw;
-      font-size: small;
-    }
-  }
-}
-
 @media screen and (max-width: 1370px) {
   .card {
     .card-body {

@@ -129,7 +129,7 @@
       .imagedCircle {
         position: absolute;
         opacity: 1;
-        margin: 9rem 22rem 0 0;
+        margin: 9rem 100% 0 0;
         width: 70%;
       }
       .navBar {
@@ -143,6 +143,15 @@
         margin: 1.2rem 0 0 0;
         flex-direction: row;
         justify-content: space-between;
+        background: linear-gradient(
+          to right,
+          #f1e9e9dc 50%,
+          #794244ee 25%,
+          #c2363dee
+        );
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
