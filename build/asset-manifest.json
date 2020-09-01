@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/zakariahn.github.io/portfolio-React/static/css/main.2b63ce61.chunk.css",
-    "main.js": "/zakariahn.github.io/portfolio-React/static/js/main.7170baec.chunk.js",
-    "main.js.map": "/zakariahn.github.io/portfolio-React/static/js/main.7170baec.chunk.js.map",
-    "runtime-main.js": "/zakariahn.github.io/portfolio-React/static/js/runtime-main.5a25764f.js",
-    "runtime-main.js.map": "/zakariahn.github.io/portfolio-React/static/js/runtime-main.5a25764f.js.map",
-    "static/js/2.01ec1337.chunk.js": "/zakariahn.github.io/portfolio-React/static/js/2.01ec1337.chunk.js",
-    "static/js/2.01ec1337.chunk.js.map": "/zakariahn.github.io/portfolio-React/static/js/2.01ec1337.chunk.js.map",
-    "index.html": "/zakariahn.github.io/portfolio-React/index.html",
-    "precache-manifest.15bc864ff4120484997ea7ae6298dd63.js": "/zakariahn.github.io/portfolio-React/precache-manifest.15bc864ff4120484997ea7ae6298dd63.js",
-    "service-worker.js": "/zakariahn.github.io/portfolio-React/service-worker.js",
-    "static/css/main.2b63ce61.chunk.css.map": "/zakariahn.github.io/portfolio-React/static/css/main.2b63ce61.chunk.css.map",
-    "static/js/2.01ec1337.chunk.js.LICENSE.txt": "/zakariahn.github.io/portfolio-React/static/js/2.01ec1337.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/zakariahn.github.io/portfolio-React/static/media/wood.7cb59cdd.jpg"
+    "main.css": "/portfolio-React/build/static/css/main.2c08936a.chunk.css",
+    "main.js": "/portfolio-React/build/static/js/main.7170baec.chunk.js",
+    "main.js.map": "/portfolio-React/build/static/js/main.7170baec.chunk.js.map",
+    "runtime-main.js": "/portfolio-React/build/static/js/runtime-main.c6920ccb.js",
+    "runtime-main.js.map": "/portfolio-React/build/static/js/runtime-main.c6920ccb.js.map",
+    "static/js/2.01ec1337.chunk.js": "/portfolio-React/build/static/js/2.01ec1337.chunk.js",
+    "static/js/2.01ec1337.chunk.js.map": "/portfolio-React/build/static/js/2.01ec1337.chunk.js.map",
+    "index.html": "/portfolio-React/build/index.html",
+    "precache-manifest.ad59754fb56cfe2abecebfb71e22218b.js": "/portfolio-React/build/precache-manifest.ad59754fb56cfe2abecebfb71e22218b.js",
+    "service-worker.js": "/portfolio-React/build/service-worker.js",
+    "static/css/main.2c08936a.chunk.css.map": "/portfolio-React/build/static/css/main.2c08936a.chunk.css.map",
+    "static/js/2.01ec1337.chunk.js.LICENSE.txt": "/portfolio-React/build/static/js/2.01ec1337.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/portfolio-React/build/static/media/wood.7cb59cdd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a25764f.js",
+    "static/js/runtime-main.c6920ccb.js",
     "static/js/2.01ec1337.chunk.js",
-    "static/css/main.2b63ce61.chunk.css",
+    "static/css/main.2c08936a.chunk.css",
     "static/js/main.7170baec.chunk.js"
   ]
 }
