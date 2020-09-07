@@ -48,10 +48,12 @@
 // ______________________________________________________________ Responsive Card _________________________________________________________
 
 .container.thethird {
+  opacity: 1;
   box-shadow: $logos-box-shadow;
   animation: spin 10s linear infinite;
   div {
     background-color: black;
+    border: 1px solid rgba(28, 131, 28, 0.247);
   }
   .earth {
     width: 1.7rem;

@@ -11,7 +11,7 @@ const WebDesignCard = () => {
       <div className="card-body">
         <h5>WEB DESIGN</h5>
         <p>
-          W orking with you to develop a website strategy so that your website
+          Working with you to develop a website strategy so that your website
           not only looks great, but works great too.
         </p>
       </div>
