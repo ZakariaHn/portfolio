@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="navBar">
-      <Link to="/home">HOME</Link>
-      <Link to="/about">ABOUT</Link>
-      <Link to="/work">WORK</Link>
-      <Link to="/contact">CONTACT</Link>
+      <Link to={process.env.PUBLIC_URL + "/home"}>HOME</Link>
+      <Link to={process.env.PUBLIC_URL + "/about"}>ABOUT</Link>
+      <Link to={process.env.PUBLIC_URL + "/work"}>WORK</Link>
+      <Link to={process.env.PUBLIC_URL + "/contact"}>CONTACT</Link>
     </div>
   );
 };

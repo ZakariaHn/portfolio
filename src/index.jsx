@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./scss/main.scss";
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter history={window.hashHistory}>
     <App />
   </BrowserRouter>,
   document.getElementById("root")

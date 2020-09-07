@@ -19,11 +19,20 @@ const App = () => {
     <main style={{ overflowX: "hidden" }}>
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/contact" component={ContactPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/work" component={WorkPage} />
-          <Route path="/services" component={ServicesPage} />
-          <Route path="/" component={HomePage} />
+          <Route
+            path={process.env.PUBLIC_URL + "/contact"}
+            component={ContactPage}
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/about"}
+            component={AboutPage}
+          />
+          <Route path={process.env.PUBLIC_URL + "/work"} component={WorkPage} />
+          <Route
+            path={process.env.PUBLIC_URL + "/services"}
+            component={ServicesPage}
+          />
+          <Route path={process.env.PUBLIC_URL + "/"} component={HomePage} />
         </Switch>
       </AnimatePresence>
       <Cursor />
