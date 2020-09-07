@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zakariahn.github.io/portfolio-React/",
+  "homepage": "https://zakariahn.github/portfolio-React/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -39,6 +39,7 @@
     "react-modal": "^3.11.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-history": "^0.2.3",
     "react-scripts": "^3.4.3",
     "react-switch": "^5.0.1",
     "react-transition-group": "^4.4.1",

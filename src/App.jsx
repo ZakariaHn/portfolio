@@ -6,19 +6,17 @@ import Cursor from "./cursor";
 import ContactPage from "./pages/contact";
 import ServicesPage from "./pages/services";
 import { AnimatePresence } from "framer-motion";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faCheckSquare, faCoffee);
 
 const App = () => {
-  const location = useLocation();
-
   return (
     <main style={{ overflowX: "hidden" }}>
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
+        <Switch>
           <Route
             path={process.env.PUBLIC_URL + "/contact"}
             component={ContactPage}
