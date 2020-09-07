@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./scss/main.scss";
 
 ReactDOM.render(
-  <BrowserRouter history={window.hashHistory}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById("root")

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import NavBar from "../components/servicesCards/navBar";
 
 const WorkPage = () => {
   const [transitions] = useState({
@@ -48,20 +48,7 @@ const WorkPage = () => {
       transition={pageTransition}
     >
       <div className="works-page">
-        <div className="navBar">
-          <Link className="z" to="/home">
-            HOME
-          </Link>
-          <Link className="z" to="/about">
-            ABOUT
-          </Link>
-          <Link className="z" to="/services">
-            SERVICES
-          </Link>
-          <Link className="z" to="/contact">
-            CONTACT
-          </Link>
-        </div>
+        <NavBar></NavBar>
         <div className="gallery">{renderDivs()}</div>
       </div>
     </motion.div>
