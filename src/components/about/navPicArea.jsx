@@ -6,16 +6,16 @@ const NavPicArea = () => {
     <div className="navigator">
       <div className={"imagedCircle"}></div>
       <div className="navBar">
-        <Link className="z" to={process.env.PUBLIC_URL + "/home"}>
+        <Link className="z" to="/home">
           HOME
         </Link>
-        <Link className="z" to={process.env.PUBLIC_URL + "/services"}>
+        <Link className="z" to="/services">
           SERVICES
         </Link>
-        <Link className="z" to={process.env.PUBLIC_URL + "/work"}>
+        <Link className="z" to="/work">
           WORK
         </Link>
-        <Link className="z" to={process.env.PUBLIC_URL + "/contact"}>
+        <Link className="z" to="/contact">
           CONTACT
         </Link>
       </div>

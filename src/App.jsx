@@ -6,31 +6,20 @@ import Cursor from "./cursor";
 import ContactPage from "./pages/contact";
 import ServicesPage from "./pages/services";
 import { AnimatePresence } from "framer-motion";
-import { Route, Switch } from "react-router-dom";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
-library.add(fab, faCheckSquare, faCoffee);
+import { Route, Switch, useLocation } from "react-router-dom";
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <main style={{ overflowX: "hidden" }}>
       <AnimatePresence exitBeforeEnter>
-        <Switch>
-          <Route
-            path={process.env.PUBLIC_URL + "/contact"}
-            component={ContactPage}
-          />
-          <Route
-            path={process.env.PUBLIC_URL + "/about"}
-            component={AboutPage}
-          />
-          <Route path={process.env.PUBLIC_URL + "/work"} component={WorkPage} />
-          <Route
-            path={process.env.PUBLIC_URL + "/services"}
-            component={ServicesPage}
-          />
-          <Route path={process.env.PUBLIC_URL + "/"} component={HomePage} />
+        <Switch location={location} key={location.pathname}>
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/work" component={WorkPage} />
+          <Route path="/services" component={ServicesPage} />
+          <Route path="/" component={HomePage} />
         </Switch>
       </AnimatePresence>
       <Cursor />

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zakariahn.github/portfolio-React/",
+  "homepage": "https://zakariahn.github.io/portfolio-React",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -13,24 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZakariaHn/portfolio-React/"
+    "url": "git+https://zakariahn.github/portfolio-React/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ZakariaHn/portfolio-React/issues"
+    "url": "https://zakariahn.github/portfolio-React/issues"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-regular-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.20.0",
     "framer-motion": "^2.6.5",
     "i": "^0.3.6",
-    "kursor": "^0.1.6",
     "node": "^14.8.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
