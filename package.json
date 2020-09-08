@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://zakariahn.github/portfolio-React/"
+    "url": "git+https://zakariahn.github/portfolio-react/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://zakariahn.github/portfolio-React/issues"
+    "url": "https://zakariahn.github/portfolio-react/issues"
   },
   "dependencies": {
     "axios": "^0.20.0",
