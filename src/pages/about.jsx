@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { motion } from "framer-motion";
-import Biography from "../components/work/biography";
+import Biography from "../components/about/biography";
 import NavPicArea from "../components/about/navPicArea";
 
 const AboutPage = () => {

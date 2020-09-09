@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import NavBar from "../components/servicesCards/navBar";
+import NavBar from "../components/work/navBar";
 
 const WorkPage = () => {
   const [transitions] = useState({
@@ -33,7 +33,9 @@ const WorkPage = () => {
 
   const renderDivs = () => {
     return ["a", "b", "c", "d", "e", "f", "g", "h", "i"].map((i) => (
-      <div className={i}></div>
+      <div className={i}>
+        <div className="overlay z"></div>
+      </div>
     ));
   };
 

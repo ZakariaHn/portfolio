@@ -3,8 +3,8 @@
 }
 
 .cursor {
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -13,9 +13,9 @@
 
   @include centralize;
   .inner {
-    height: 0.3rem;
-    width: 0.3rem;
-    background-color: #c2363d;
+    height: 0.4rem;
+    width: 0.4rem;
+    background-color: #dad6d6;
     border-radius: 50%;
   }
   .left {
@@ -35,10 +35,9 @@
 }
 .cursor--link-hovered {
   .inner {
-    height: 0.6rem;
-    width: 0.6rem;
+    height: 0.8rem;
+    width: 0.8rem;
     background-color: #c2363d;
-    border-radius: 50%;
   }
 }
 

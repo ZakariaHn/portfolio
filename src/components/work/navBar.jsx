@@ -14,7 +14,7 @@ const navBar = () => {
         SERVICES
       </Link>
       <Link className="z" to="/contact">
-        WORK
+        CONTACT
       </Link>
     </div>
   );
