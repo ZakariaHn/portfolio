@@ -1,13 +1,15 @@
 .works-page {
   margin: 0;
   padding: 0;
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-
   background-image: url("../../img/wood.jpg");
   box-sizing: border-box;
-
+  .navBar {
+    width: 48%;
+    top: 1%;
+  }
   .gallery {
     width: 40vw;
     height: 93vh;
@@ -18,12 +20,15 @@
     grid-template-rows: repeat(6, 1fr);
     gap: 0.5rem;
     padding: 0.5rem;
-    border-radius: 1rem;
-    background-image: url("../../img/wood-97484_1920.jpg");
-
+    border-radius: 0.5rem;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(5, 84, 94, 0.466) 16%,
+      rgba(187, 187, 187, 0.774) 91.1%
+    );
     div {
       @include centralize;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
     }
     .a {
       grid-column-start: 1;
@@ -73,7 +78,8 @@
 
     .e {
       background-image: url("../../img/workgllary/youtube.jpg");
-      background-size: contain;
+      background-size: cover;
+      border: 1px solid rgba(43, 38, 38, 0.74);
       background-repeat: no-repeat;
       .overlay:before {
         content: "You-Tube Page Mockup";
@@ -109,15 +115,14 @@
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(58, 53, 53, 0.801);
-  color: rgb(241, 228, 228);
+  background-color: rgba(245, 238, 238, 0.801);
+  color: rgb(31, 28, 28);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   text-align: center;
   font-size: large;
   @include centralize;
   border: none;
-
   &:hover {
     opacity: 1;
   }
