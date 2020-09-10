@@ -9,12 +9,18 @@
   .navBar {
     width: 48%;
     top: 1%;
+    & * {
+      margin-top: 1.3rem;
+      padding-bottom: 1rem;
+      &:hover {
+        border-bottom: 2px solid ivory;
+      }
+    }
   }
   .gallery {
     width: 40vw;
     height: 93vh;
     margin: 1rem;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -86,28 +92,41 @@
       }
     }
     .f {
-      // background-image: url("../../img/workgllary/IMG_2879.JPG");
-      background-size: cover;
+      background-image: url("../../img/workgllary/Instagram.png");
+      background-size: contain;
       .overlay:before {
-        content: "Instagram Page Mockup";
+        content: "Instagram Mockup";
       }
     }
+
     .g {
       grid-column-start: 1;
       grid-column-end: 5;
-      // background-image: url("");
-      background-size: cover;
+      background-image: url("../../img/workgllary/love.png");
+      background-size: 75%;
+      background-position-y: center;
+      .overlay:before {
+        content: "Only The word love in Arabic, which this Porfolio made with! (drawn with light)";
+      }
     }
 
     .h {
       grid-column-start: 1;
-      // background-image: url();
       grid-column-end: 3;
-      background-size: contain;
+      background-image: url("../../img/workgllary/moviesList.png");
+      background-size: cover;
+      .overlay:before {
+        content: "Movies List";
+      }
     }
     .i {
       grid-column-start: 3;
       grid-column-end: 5;
+      background-image: url("../../img/workgllary/toDoList.png");
+      background-size: cover;
+      .overlay:before {
+        content: "To Do List";
+      }
     }
   }
 }
