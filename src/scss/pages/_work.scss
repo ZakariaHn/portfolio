@@ -61,20 +61,14 @@
         content: "ROSETTA... Virtual Library Project";
       }
     }
+
     .c {
-      grid-row-start: 3;
-      grid-row-end: 5;
-      // background-image: url("../../img/workgllary/IMG_2874.JPG");
-      background-size: cover;
-      background-position: top;
-    }
-    .d {
-      grid-column-start: 2;
+      grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 5;
       background-image: url("../../img/workgllary/css-drows.png");
-      background-size: 200%;
+      background-size: cover;
       background-position: top;
 
       .overlay:before {
@@ -82,7 +76,7 @@
       }
     }
 
-    .e {
+    .d {
       background-image: url("../../img/workgllary/youtube.jpg");
       background-size: cover;
       border: 1px solid rgba(43, 38, 38, 0.74);
@@ -91,7 +85,7 @@
         content: "You-Tube Page Mockup";
       }
     }
-    .f {
+    .e {
       background-image: url("../../img/workgllary/Instagram.png");
       background-size: contain;
       .overlay:before {
@@ -99,7 +93,7 @@
       }
     }
 
-    .g {
+    .f {
       grid-column-start: 1;
       grid-column-end: 5;
       background-image: url("../../img/workgllary/love.png");
@@ -110,7 +104,7 @@
       }
     }
 
-    .h {
+    .g {
       grid-column-start: 1;
       grid-column-end: 3;
       background-image: url("../../img/workgllary/moviesList.png");
@@ -119,7 +113,7 @@
         content: "Movies List";
       }
     }
-    .i {
+    .h {
       grid-column-start: 3;
       grid-column-end: 5;
       background-image: url("../../img/workgllary/toDoList.png");

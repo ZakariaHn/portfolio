@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/work/navBar";
+import Gallery from "../components/work/gallery";
 
 const WorkPage = () => {
   const [transitions] = useState({
@@ -31,28 +32,20 @@ const WorkPage = () => {
     },
   });
 
-  const renderDivs = () => {
-    return ["a", "b", "c", "d", "e", "f", "g", "h", "i"].map((i) => (
-      <div className={i} key={i}>
-        <div className="overlay z"></div>
-      </div>
-    ));
-  };
-
   const { pageStyle, pageVariants, pageTransition } = transitions;
+
   return (
     <motion.div
-      style={pageStyle}
-      initial="out"
-      animate="in"
       exit="out"
+      animate="in"
+      initial="out"
+      className="works-page"
+      style={pageStyle}
       variants={pageVariants}
       transition={pageTransition}
     >
-      <div className="works-page">
-        <NavBar></NavBar>
-        <div className="gallery">{renderDivs()}</div>
-      </div>
+      <NavBar />
+      <Gallery />
     </motion.div>
   );
 };
