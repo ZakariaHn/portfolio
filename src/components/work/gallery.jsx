@@ -1,5 +1,4 @@
 import React from "react";
-
 const Gallery = () => {
   const renderGalleryDivs = () => {
     return ["a", "b", "c", "d", "e", "f", "g", "h"].map((i) => (
