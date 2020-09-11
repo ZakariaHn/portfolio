@@ -33,7 +33,7 @@ const WorkPage = () => {
 
   const renderDivs = () => {
     return ["a", "b", "c", "d", "e", "f", "g", "h", "i"].map((i) => (
-      <div className={i}>
+      <div className={i} key={i}>
         <div className="overlay z"></div>
       </div>
     ));

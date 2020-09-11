@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
+
 const Cursor = () => {
   const [clicked, setClicked] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -10,7 +11,7 @@ const Cursor = () => {
     addEventListeners();
     handleLinkHoverEvents();
     return () => removeEventListeners();
-  }, []);
+  });
 
   const handleLinkHoverEvents = () => {
     document.querySelectorAll(".z").forEach((el) => {
