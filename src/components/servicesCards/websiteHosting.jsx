@@ -3,9 +3,9 @@ import React from "react";
 const WebHostingCard = () => {
   return (
     <div className="card">
-      <div class="container thesecond">
+      <div className="container thesecond">
         <div>
-          <div class="little"></div>
+          <div className="little"></div>
         </div>
       </div>
       <div className="card-body">

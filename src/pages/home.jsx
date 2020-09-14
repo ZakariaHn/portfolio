@@ -43,14 +43,13 @@ const HomePage = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="homePage"
     >
-      <div className="homePage">
-        <NavLeft></NavLeft>
-        <div className="homePageBody">
-          <Logo />
-          <Circles></Circles>
-          <NameArea></NameArea>
-        </div>
+      <NavLeft></NavLeft>
+      <div className="homePageBody">
+        <Logo />
+        <Circles></Circles>
+        <NameArea></NameArea>
       </div>
     </motion.div>
   );

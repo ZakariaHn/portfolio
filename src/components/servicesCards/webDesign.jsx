@@ -3,10 +3,10 @@ import React from "react";
 const WebDesignCard = () => {
   return (
     <div className="card">
-      <div class="container design">
-        <div class="sec-row-line-top1"></div>
-        <div class="sec-row-line-mid1"></div>
-        <div class="sec-row-line-down1"></div>
+      <div className="container design">
+        <div className="sec-row-line-top1"></div>
+        <div className="sec-row-line-mid1"></div>
+        <div className="sec-row-line-down1"></div>
       </div>
       <div className="card-body">
         <h5>WEB DESIGN</h5>

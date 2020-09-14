@@ -40,11 +40,10 @@ const AboutPage = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="about-page"
     >
-      <div className="about-page">
-        <Biography />
-        <NavPicArea />
-      </div>
+      <Biography />
+      <NavPicArea />
     </motion.div>
   );
 };

@@ -5,7 +5,7 @@ const NameArea = () => {
     <div className="nameArea">
       <h5 className={"name-info"}>I'm Zakaria Hamdan</h5>
       <p className={"job-info"}>
-        Front/ Back-End Developer currenlty living in Germany.
+        Full stack Web Developer currenlty living in Germany.
       </p>
     </div>
   );

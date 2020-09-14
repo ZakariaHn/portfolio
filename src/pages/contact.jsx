@@ -41,19 +41,16 @@ const ContactPage = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="contact-page"
     >
-      <div className="contact-page">
-        <div className="a">
-          <p>LET'S COMUNICATE</p>
-        </div>
-        <div className="b">
-          <Form />
-        </div>
-        <div className="c">
-          <div></div>
-        </div>
-        <NavBar />
+      <div className="a">
+        <p>LET'S COMUNICATE</p>
       </div>
+      <div className="b">
+        <Form />
+      </div>
+      <div className="c" />
+      <NavBar />
     </motion.div>
   );
 };

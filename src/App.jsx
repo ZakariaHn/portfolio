@@ -2,7 +2,7 @@ import React from "react";
 import HomePage from "./pages/home";
 import WorkPage from "./pages/work";
 import AboutPage from "./pages/about";
-import Cursor from "./cursor";
+import Cursor from "./components/cursor";
 import ContactPage from "./pages/contact";
 import ServicesPage from "./pages/services";
 import { AnimatePresence } from "framer-motion";

@@ -1,8 +1,15 @@
 import React from "react";
+import galleryData from "../../pages/gallery.json";
 const Gallery = () => {
   const renderGalleryDivs = () => {
-    return ["a", "b", "c", "d", "e", "f", "g", "h"].map((i) => (
-      <div className={i} key={i}>
+    return galleryData.map(({ cn, url }) => (
+      <div
+        className={cn}
+        key={cn}
+        onClick={() => {
+          window.open(url);
+        }}
+      >
         <div className="overlay z"></div>
       </div>
     ));

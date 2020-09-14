@@ -2,9 +2,9 @@ import React from "react";
 const ResponisivnessCard = () => {
   return (
     <div className="card">
-      <div class="container thethird">
-        <div class="earth"></div>
-        <div class="moon"></div>
+      <div className="container thethird">
+        <div className="earth"></div>
+        <div className="moon"></div>
       </div>
       <div className="card-body">
         <h5>RESPONSIVE</h5>

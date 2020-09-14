@@ -3,11 +3,11 @@ import React from "react";
 const WebSupportCard = () => {
   return (
     <div className="card">
-      <div class="container five">
-        <div class="a"></div>
-        <div class="b"></div>
-        <div class="c"></div>
-        <div class="d"></div>
+      <div className="container five">
+        <div className="a"></div>
+        <div className="b"></div>
+        <div className="c"></div>
+        <div className="d"></div>
       </div>
       <div className="card-body">
         <h5>SUPPORT</h5>

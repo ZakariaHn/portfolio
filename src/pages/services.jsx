@@ -38,7 +38,6 @@ const ServicesPage = () => {
   });
 
   const { pageStyle, pageVariants, pageTransition } = transitions;
-
   return (
     <motion.div
       style={pageStyle}
@@ -47,20 +46,19 @@ const ServicesPage = () => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="services-page"
     >
-      <div className="services-page">
-        <div className="row-up">
-          <WebDesignCard />
-          <ResponisivnessCard />
-          <WebArchCard />
-        </div>
-        <div className="row-down">
-          <SeoCard />
-          <WebSupportCard />
-          <WebHostingCard />
-        </div>
-        <NavBar />
+      <div className="row-up">
+        <WebDesignCard />
+        <ResponisivnessCard />
+        <WebArchCard />
       </div>
+      <div className="row-down">
+        <SeoCard />
+        <WebSupportCard />
+        <WebHostingCard />
+      </div>
+      <NavBar />
     </motion.div>
   );
 };
