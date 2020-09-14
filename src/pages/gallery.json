@@ -1,11 +1,10 @@
 [
   { "cn": "a", "url": "https://zakariahn.github.io/zamagana-synthesizer/" },
   { "cn": "b", "url": "https://zakariahn.github.io/Rosetta-books-finder/" },
-  { "cn": "c", "url": "" },
-  { "cn": "d", "url": "https://zakariahn.github.io/css-draws/" },
-  { "cn": "e", "url": "https://zakariahn.github.io/you-tube-mockup/" },
-  { "cn": "f", "url": "https://zakariahn.github.io/instagram-mockup_react/" },
-  { "cn": "g", "url": "" },
-  { "cn": "h", "url": "https://zakariahn.github.io/movies-list/" },
-  { "cn": "i", "url": "https://zakariahn.github.io/to-do-list-react/" }
+  { "cn": "c", "url": "https://zakariahn.github.io/css-draws/" },
+  { "cn": "d", "url": "https://zakariahn.github.io/you-tube-mockup/" },
+  { "cn": "e", "url": "https://zakariahn.github.io/instagram-mockup_react/" },
+  { "cn": "f", "url": "" },
+  { "cn": "g", "url": "https://zakariahn.github.io/movies-list/" },
+  { "cn": "h", "url": "https://zakariahn.github.io/to-do-list-react/" }
 ]
