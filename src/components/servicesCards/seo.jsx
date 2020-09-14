@@ -10,7 +10,7 @@ const SeoCard = () => {
         <div className="d"></div>
       </div>
       <div className="card-body">
-        <h5>SEO </h5>
+        <h5>SEO</h5>
         <p>
           Just that you have a website doesn't mean anyone will find it. I can
           help your website get found in the search engines.

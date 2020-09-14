@@ -1,11 +1,12 @@
 import React from "react";
 import galleryData from "../../pages/gallery.json";
+
 const Gallery = () => {
   const renderGalleryDivs = () => {
-    return galleryData.map(({ cn, url }) => (
+    return galleryData.map(({ id, classes, url }) => (
       <div
-        className={cn}
-        key={cn}
+        className={classes}
+        key={id}
         onClick={() => {
           window.open(url);
         }}

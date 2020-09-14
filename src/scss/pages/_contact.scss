@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-
   .a {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -78,6 +77,8 @@
         width: 100%;
         letter-spacing: 4rem;
         font-weight: bolder;
+        background-image: url("../../img/wood.jpg");
+        color: #d3b48f;
         @include contactForm;
       }
     }
@@ -125,9 +126,5 @@
       width: 82%;
       margin-top: 6rem;
     }
-    // .c {
-    // }
-    // .navBar {
-    // }
   }
 }

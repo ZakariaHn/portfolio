@@ -6,15 +6,13 @@ import Cursor from "./components/cursor";
 import ContactPage from "./pages/contact";
 import ServicesPage from "./pages/services";
 import { AnimatePresence } from "framer-motion";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 const App = () => {
-  const location = useLocation();
-
   return (
     <main style={{ overflowX: "hidden" }}>
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
+        <Switch>
           <Route path="/contact" component={ContactPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/work" component={WorkPage} />
