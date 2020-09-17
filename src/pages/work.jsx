@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/work/navBar";
 import Gallery from "../components/work/gallery";
+import Animations from "../components/work/animatedCubes/animatedCubes";
 
 const WorkPage = () => {
   const [transitions] = useState({
@@ -46,6 +47,7 @@ const WorkPage = () => {
     >
       <NavBar />
       <Gallery />
+      <Animations />
     </motion.div>
   );
 };

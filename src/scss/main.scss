@@ -20,3 +20,22 @@ body,
   height: 100vh;
   cursor: none;
 }
+
+.cubesContainer {
+  width: 55vw;
+  height: 80vh;
+  margin: 8rem 0 0 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  width: 100%;
+  color: #c2363d;
+  height: 100%;
+}

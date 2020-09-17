@@ -1,5 +1,5 @@
 import React from "react";
-import galleryData from "../../pages/gallery.json";
+import galleryData from "../../gallery.json";
 
 const Gallery = () => {
   const renderGalleryDivs = () => {
