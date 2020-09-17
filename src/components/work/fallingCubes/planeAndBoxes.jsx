@@ -13,8 +13,8 @@ function Plane({ position }) {
   });
   return (
     <mesh ref={ref} receiveShadow>
-      {/* <planeBufferGeometry attach="mat" args={[1000, 1000]} />
-      <meshStandardMaterial attach="mat" color="#171717" /> */}
+      <planeBufferGeometry attach="geometry" args={[1000, 1000]} />
+      <meshStandardMaterial attach="material" color="#171717" />
     </mesh>
   );
 }
@@ -28,7 +28,7 @@ function Box({ position }) {
   return (
     <mesh ref={ref} castShadow receiveShadow>
       <boxGeometry attach="geometry" args={[2, 2, 2]} />
-      <meshStandardMaterial attach="material" roughness={0.5} color="#c2363d" />
+      <meshStandardMaterial attach="material" roughness={0.5} color="#81b65d" />
     </mesh>
   );
 }
@@ -48,12 +48,12 @@ export default function Animations() {
           gl.outputEncoding = THREE.sRGBEncoding;
         }}
       >
-        <pointLight position={[-10, -10, 30]} intensity={0.2} />
+        <pointLight position={[-10, -10, 30]} intensity={0.25} />
         <spotLight
-          intensity={1}
-          position={[100, 100, 80]}
-          angle={0.1}
-          penumbra={0.1}
+          intensity={0.3}
+          position={[30, 30, 50]}
+          angle={0.2}
+          penumbra={1}
           castShadow
         />
         <Provider>
