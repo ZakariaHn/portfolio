@@ -37,7 +37,7 @@ export default function Animations() {
   const [showPlane, set] = useState(true);
   // When React removes (unmounts) the upper plane after 5 sec, objects should drop ...
   // This may seem like magic, but as the plane unmounts it removes itself from cannon and that's that
-  useEffect(() => void setTimeout(() => set(false), 2000), []);
+  useEffect(() => void setTimeout(() => set(false), 1000), []);
   return (
     <div className="cubesContainer">
       <Canvas
@@ -48,24 +48,25 @@ export default function Animations() {
           gl.outputEncoding = THREE.sRGBEncoding;
         }}
       >
-        <pointLight position={[-10, -10, 30]} intensity={0.1} />
+        <pointLight position={[-10, -10, 30]} intensity={0.2} />
         <spotLight
           intensity={1}
-          position={[30, 30, 30]}
-          angle={0.2}
-          penumbra={1}
+          position={[100, 100, 80]}
+          angle={0.1}
+          penumbra={0.1}
           castShadow
         />
         <Provider>
-          <Plane position={[0, 0, -10]} />
+          <Plane position={[-20, 10, -20]} />
           {showPlane && <Plane position={[0, 0, 0]} />}
-          <Box position={[1, 0, 8]} />
-          <Box position={[2, 1, 5]} />
-          <Box position={[0, 0, 6]} />
-          <Box position={[-1, 1, 8]} />
-          <Box position={[-2, 2, 13]} />
-          <Box position={[2, -1, 13]} />
-          {!showPlane && <Box position={[0.5, 1.0, 20]} />}
+          <Box position={[1, 0, 42]} />
+          <Box position={[2, 1, 22]} />
+          <Box position={[-20, -10, 10]} />
+          <Box position={[-25, 12, 50]} />
+          <Box position={[-26, 11.9, 10]} />
+          <Box position={[-8, 6, 40]} />
+          <Box position={[3, 4, 30]} />
+          <Box position={[-20, -9, 20]} />
         </Provider>
       </Canvas>
     </div>

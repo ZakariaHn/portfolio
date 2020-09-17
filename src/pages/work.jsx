@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/work/navBar";
 import Gallery from "../components/work/gallery";
-import Animations from "../components/work/animatedCubes/animatedCubes";
+import Animations from "../components/work/fallingCubes/planeAndBoxes";
 
 const WorkPage = () => {
   const [transitions] = useState({

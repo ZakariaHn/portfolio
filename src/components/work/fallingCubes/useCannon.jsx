@@ -20,7 +20,7 @@ export function Provider({ children }) {
 }
 
 // Custom hook to maintain a world physics body
-export function useCannon({ ...props }, fn, deps = []) {
+export function useCannon({ ...props }, fn) {
   const ref = useRef();
   // Get cannon world object
   const world = useContext(context);
@@ -33,7 +33,7 @@ export function useCannon({ ...props }, fn, deps = []) {
     world.addBody(body);
     // Remove body on unmount
     return () => world.removeBody(body);
-  }, deps);
+  }, [body, world, fn]);
 
   useFrame(() => {
     if (ref.current) {
