@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zakariahn.github.io/portfolio-react",
+  "homepage": "https://zakariahn.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://zakariahn.github/portfolio-react/"
+    "url": "git+https://zakariahn.github/portfolio/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://zakariahn.github/portfolio-react/issues"
+    "url": "https://zakariahn.github/portfolio/issues"
   },
   "dependencies": {
     "animejs": "^3.2.0",
