@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.d68da8b9.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.cabb0e3f.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.cabb0e3f.chunk.js.map",
-    "runtime-main.js": "/portfolio-react/static/js/runtime-main.c94dc782.js",
-    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.c94dc782.js.map",
-    "static/js/2.508274e5.chunk.js": "/portfolio-react/static/js/2.508274e5.chunk.js",
-    "static/js/2.508274e5.chunk.js.map": "/portfolio-react/static/js/2.508274e5.chunk.js.map",
-    "index.html": "/portfolio-react/index.html",
-    "precache-manifest.8ccb463f4ebf3afa0c864fc75cdf72ad.js": "/portfolio-react/precache-manifest.8ccb463f4ebf3afa0c864fc75cdf72ad.js",
-    "service-worker.js": "/portfolio-react/service-worker.js",
-    "static/css/main.d68da8b9.chunk.css.map": "/portfolio-react/static/css/main.d68da8b9.chunk.css.map",
-    "static/js/2.508274e5.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.508274e5.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/portfolio-react/static/media/youtube.e691ce9b.jpg"
+    "main.css": "/portfolio/static/css/main.18fdfe9d.chunk.css",
+    "main.js": "/portfolio/static/js/main.f489724e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f489724e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.848ef707.chunk.js": "/portfolio/static/js/2.848ef707.chunk.js",
+    "static/js/2.848ef707.chunk.js.map": "/portfolio/static/js/2.848ef707.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.490d31e61263be9fc06e36513fac2582.js": "/portfolio/precache-manifest.490d31e61263be9fc06e36513fac2582.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.18fdfe9d.chunk.css.map": "/portfolio/static/css/main.18fdfe9d.chunk.css.map",
+    "static/js/2.848ef707.chunk.js.LICENSE.txt": "/portfolio/static/js/2.848ef707.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/portfolio/static/media/youtube.e691ce9b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c94dc782.js",
-    "static/js/2.508274e5.chunk.js",
-    "static/css/main.d68da8b9.chunk.css",
-    "static/js/main.cabb0e3f.chunk.js"
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.848ef707.chunk.js",
+    "static/css/main.18fdfe9d.chunk.css",
+    "static/js/main.f489724e.chunk.js"
   ]
 }
