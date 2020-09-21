@@ -3,21 +3,23 @@ import React, { useEffect } from "react";
 import { Canvas } from "react-three-fiber";
 import { useSprings, a } from "react-spring/three";
 
-const number = 12;
+const number = 50;
 const colors = [
   "#a33035",
   "#1c6274",
-  "#dad6d6",
+  "#0d404d",
   "#5fa55f",
   "#ce5e13",
-  "lightblue",
+  "#c0b518",
+  "#8b1e55",
+  "#cc0e0e",
 ];
 const random = (i) => {
   const r = Math.random();
   return {
-    position: [100 - Math.random() * 200, 100 - Math.random() * 200, i * 1.5],
+    position: [200 - Math.random() * 300, 100 - Math.random() * 300, i * 1.5],
     color: colors[Math.round(Math.random() * (colors.length - 1))],
-    scale: [1 + r * 14, 1 + r * 14, 1],
+    scale: [1 + r * 2, 1 + r * 5, 1],
     rotation: [0, 0, THREE.Math.degToRad(Math.round(Math.random()) * 45)],
   };
 };
@@ -33,13 +35,13 @@ function Content() {
   const [springs, set] = useSprings(number, (i) => ({
     from: random(i),
     ...random(i),
-    config: { mass: 20, tension: 100, friction: 50 },
+    config: { mass: 30, tension: 100, friction: 25 },
   }));
   useEffect(
     () =>
       void setInterval(
         () => set((i) => ({ ...random(i), delay: i * 40 })),
-        6000
+        9000
       ),
     []
   );
@@ -77,7 +79,7 @@ function Lights() {
 export default function Animations() {
   return (
     <div className="cubesContainer">
-      <Canvas shadowMap camera={{ position: [0, 0, 100], fov: 100 }}>
+      <Canvas shadowMap camera={{ position: [0, 0, 100], fov: 210 }}>
         <Lights />
         <Content />
       </Canvas>

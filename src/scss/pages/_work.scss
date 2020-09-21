@@ -42,7 +42,7 @@
     div {
       @include centralize;
       border-radius: 0.5rem;
-      box-shadow: inset 0rem 0.1rem 1rem 0.1rem #368ac273,
+      box-shadow: inset 0rem 0.1rem 0.5rem 0.1rem #368ac273,
         0rem 0.1rem 1rem 0.5rem #8f4c2073;
     }
     .a {
