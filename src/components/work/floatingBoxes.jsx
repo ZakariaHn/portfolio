@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Canvas } from "react-three-fiber";
 import { useSprings, a } from "react-spring/three";
 
@@ -32,10 +32,11 @@ const data = new Array(number).fill().map(() => {
 });
 
 function Content() {
+  const [hovered, setHover] = useState(false);
   const [springs, set] = useSprings(number, (i) => ({
     from: random(i),
     ...random(i),
-    config: { mass: 30, tension: 100, friction: 25 },
+    config: { mass: 30, tension: 100, friction: 35 },
   }));
   useEffect(
     () =>
@@ -46,13 +47,20 @@ function Content() {
     []
   );
   return data.map((d, index) => (
-    <a.mesh key={index} {...springs[index]} castShadow receiveShadow>
+    <a.mesh
+      key={index}
+      {...springs[index]}
+      castShadow
+      receiveShadow
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}
+    >
       <boxBufferGeometry attach="geometry" args={d.args} />
       <a.meshStandardMaterial
         attach="material"
-        color={springs[index].color}
         roughness={0.75}
         metalness={0.5}
+        color={hovered ? "hotpink" : springs[index].color}
       />
     </a.mesh>
   ));
