@@ -45,6 +45,7 @@
     "save": "^2.4.0",
     "sharp": "^0.26.0",
     "three": "^0.120.1",
+    "three.meshline": "^1.3.0",
     "threejs-meshline": "^2.0.12"
   },
   "devDependencies": {
