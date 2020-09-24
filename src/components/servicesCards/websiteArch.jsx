@@ -1,13 +1,17 @@
-import React from "react";
-
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
+import ArchLogo from "./logos/Architecture";
 const WebArchCard = () => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.2 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="card">
-      <div className="container third">
-        <div className="sec-row-line-top3"></div>
-        <div className="sec-row-line-mid3"></div>
-        <div className="sec-row-line-bottom3"></div>
-      </div>
+    <div className="card" ref={ref}>
+      <ArchLogo />
       <div className="card-body">
         <h5>ARCHITECTURE</h5>
         <p>

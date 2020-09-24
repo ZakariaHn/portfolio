@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import HostingLogo from "./logos/hosting";
+import { TweenMax } from "gsap";
 
 const WebHostingCard = () => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.8 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="card">
-      <div className="container thesecond">
-        <div>
-          <div className="little"></div>
-        </div>
-      </div>
+    <div className="card" ref={ref}>
+      <HostingLogo />
       <div className="card-body">
         <h5>HOSTING</h5>
         <p>

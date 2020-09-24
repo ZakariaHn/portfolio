@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "../components/contact/form";
 import { motion } from "framer-motion";
 import NavBar from "../components/contact/navBar";
+import { FliesText } from "react-text-fun";
 
 const ContactPage = () => {
   const [transitions] = useState({
@@ -44,7 +45,20 @@ const ContactPage = () => {
       className="contact-page"
     >
       <div className="a">
-        <p>LET'S COMUNICATE</p>
+        <p>
+          <FliesText
+            text="LET'S COMUNICATE"
+            fontSize={65}
+            fill="black"
+            fontWeight="bold"
+            cellWidth={0.03}
+            speed={1}
+            dodge={false}
+            paddingTop={20}
+            dodgeY={0.05}
+            dodgeSpread={0.1}
+          />
+        </p>
       </div>
       <div className="b">
         <Form />

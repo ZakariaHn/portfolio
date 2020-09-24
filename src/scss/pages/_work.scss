@@ -17,7 +17,7 @@
     top: 0.01%;
     z-index: 1;
     background-color: black;
-    border-bottom: 4px solid #368ac273;
+    border-bottom: 2px solid #7d0633;
   }
   canvas {
     width: 100%;
@@ -34,7 +34,7 @@
     position: absolute;
     display: grid;
     margin-top: 3rem;
-    background-image: linear-gradient(#a2ccb694, #ee796e88, #a2ccb6a9);
+    background-image: linear-gradient(#f2a17b6c, #921c4952, #f2a17b6c);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0.5rem;

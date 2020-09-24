@@ -104,9 +104,9 @@ import * as meshline from "three.meshline";
 
 extend(meshline);
 
-const numLines = 100;
+const numLines = 20;
 const lines = new Array(numLines).fill();
-const colors = ["#A2CCB6", "#FCEEB5", "#EE786E", "#EE786E"];
+const colors = ["#7d0633", "#31112c", "#f2a07b", "#fbdcc4"];
 
 function Fatline() {
   const material = useRef();

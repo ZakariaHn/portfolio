@@ -129,11 +129,11 @@
   padding: 0.2rem;
 
   div {
-    width: 1.5rem;
+    width: 1.4rem;
   }
 
   .a {
-    transform: rotate(45deg) translate(0.8rem, 0.1rem);
+    transform: rotate(45deg) translate(0.7rem, 0.1rem);
   }
 
   .b {
@@ -141,11 +141,11 @@
   }
 
   .c {
-    transform: rotate(315deg) translate(0.2rem, 0.1rem);
+    transform: rotate(315deg) translate(0.2rem, 0.07rem);
   }
 
   .d {
-    transform: rotate(224deg) translate(0.8rem, 0rem);
+    transform: rotate(224deg) translate(0.7rem, -0.01rem);
   }
   & div {
     box-shadow: 0px 6px rgba(255, 86, 19, 0.555);

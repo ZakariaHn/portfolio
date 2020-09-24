@@ -1,14 +1,17 @@
-import React from "react";
-
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
+import SeoLogo from "./logos/Seo";
 const SeoCard = () => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.4 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="card">
-      <div className="container fifth">
-        <div className="a"></div>
-        <div className="b"></div>
-        <div className="c"></div>
-        <div className="d"></div>
-      </div>
+    <div className="card" ref={ref}>
+      <SeoLogo />
       <div className="card-body">
         <h5>SEO</h5>
         <p>

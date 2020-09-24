@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
 
 const Circles = () => {
+  let circlesItem = useRef(null);
+  const ref = (el) => {
+    circlesItem = el;
+  };
+  useEffect(() => {
+    TweenMax.from(circlesItem, { duration: 4, opacity: 0, delay: 2 });
+  });
+
   let today = new Date(),
     time = today.getHours() + ":" + today.getMinutes(),
     hrs = today.getHours();
@@ -19,7 +28,7 @@ const Circles = () => {
   };
 
   return (
-    <div className="circles">
+    <div className="circles" ref={ref}>
       <div className={"greeting"}>
         <div id="lblGreetings">{renderSpan()}</div>
       </div>

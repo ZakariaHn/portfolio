@@ -24,8 +24,10 @@
   "dependencies": {
     "animejs": "^3.2.0",
     "axios": "^0.20.0",
+    "blotter": "^2.1.0",
     "cannon": "^0.6.2",
     "framer-motion": "^2.6.5",
+    "gsap": "^3.5.1",
     "i": "^0.3.6",
     "lerp": "^1.0.3",
     "node": "^14.8.0",
@@ -40,6 +42,7 @@
     "react-scripts": "^3.4.3",
     "react-spring": "^8.0.27",
     "react-switch": "^5.0.1",
+    "react-text-fun": "^1.0.0",
     "react-three-fiber": "^4.2.21",
     "react-transition-group": "^4.4.1",
     "save": "^2.4.0",

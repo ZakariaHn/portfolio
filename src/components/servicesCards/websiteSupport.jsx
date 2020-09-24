@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
+import SupportLogo from "./logos/support";
 
 const WebSupportCard = () => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.6 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="card">
-      <div className="container five">
-        <div className="a"></div>
-        <div className="b"></div>
-        <div className="c"></div>
-        <div className="d"></div>
-      </div>
+    <div className="card" ref={ref}>
+      <SupportLogo />
       <div className="card-body">
         <h5>SUPPORT</h5>
         <p>
