@@ -62,8 +62,10 @@
   height: 50vh;
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(12, 12, 12);
   color: #d3c8c8cc;
+
   .project {
     width: 55%;
     height: 100%;
@@ -72,30 +74,28 @@
     .image {
       width: 57%;
       height: 82%;
-      background-color: #d3c8c8cc;
       border-radius: 0.5rem;
-
       .overlay {
         height: 100%;
         width: 100%;
-        background-color: #c2363dd0;
+        background-color: #1369627e;
         transition: opacity 0.5s ease-in-out;
         border-radius: 0.5rem;
+        z-index: 1;
         &:hover {
           opacity: 0;
         }
       }
     }
     .project-content {
-      width: 55%;
+      width: 50%;
       height: 82%;
       right: 0;
-      z-index: 1;
       text-align: right;
       position: absolute;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       .project-title {
         margin-top: 0;
         font-size: 2vw;
@@ -104,14 +104,14 @@
       .project-description {
         background-color: #181616;
         max-height: 24vh;
-        padding: 1rem;
+        padding: 3%;
         font-size: 0.9vw;
         border-radius: 5px;
 
         p {
           padding: 0;
           margin: 0;
-          line-height: 1.6rem;
+          line-height: 160%;
           letter-spacing: 1.2px;
           color: #d3c8c8cc;
         }
@@ -124,17 +124,18 @@
         color: #c2363dee;
         margin-top: 1rem;
         li {
-          margin-left: 2rem;
+          margin-left: 5%;
           font-size: 0.9vw;
         }
       }
-
-      .iconWork {
-        font-size: 1.2vw;
-        & :hover {
+      .project-links:hover {
+        :hover {
           color: #c2363dee;
           cursor: pointer;
         }
+      }
+      .iconWork {
+        font-size: 1.2vw;
       }
     }
   }

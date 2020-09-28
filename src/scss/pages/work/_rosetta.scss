@@ -1,0 +1,50 @@
+.rosetta-card {
+  @include work-cards;
+  .project {
+    .image {
+      position: absolute;
+      right: 0;
+      background-image: url("../../../img/workgllary/rosetta.png");
+      background-size: contain;
+
+      clip-path: polygon(25% 0%, 100% 50%, 85% 0%, 75% 60%, 25% 100%, 0% 50%);
+    }
+
+    .project-description {
+      transition: 0.5s ease-in-out;
+      -webkit-box-shadow: -3px 4px 2px 0px #201f1fbf;
+      -moz-box-shadow: -3px 4px 2px 0px #201f1fbf;
+      box-shadow: -3px 4px 2px 0px #201f1fbf;
+
+      &:hover {
+        transform: scale(1.05);
+        transform: translate(0.5rem, -0.5rem);
+        -webkit-box-shadow: -7px 10px 5px 0px #201f1fbf;
+        -moz-box-shadow: -7px 10px 5px 0px #201f1fbf;
+        box-shadow: -7px 10px 5px 0px #201f1fbf;
+      }
+    }
+    .project-content {
+      position: relative;
+      text-align: left;
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+          margin-left: 0;
+          margin-right: 2rem;
+        }
+      }
+      .project-links {
+        * {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

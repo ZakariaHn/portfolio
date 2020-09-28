@@ -1,0 +1,40 @@
+.zamagana-card {
+  @include work-cards;
+  .image {
+    background-image: url("../../../img/workgllary/synth.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(
+      30% 9%,
+      0% 0%,
+      100% 30%,
+      30% 100%,
+      -10% 70%,
+      0% 20%,
+      100% 70%,
+      70% 100%
+    );
+    z-index: 1;
+  }
+  .project-description {
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 3px 4px 2px 0px #201f1fbf;
+    -moz-box-shadow: 3px 4px 2px 0px #201f1fbf;
+    box-shadow: 3px 4px 2px 0px #201f1fbf;
+
+    &:hover {
+      transform: scale(1.05);
+      transform: translate(-0.5rem, -0.5rem);
+      -webkit-box-shadow: 7px 10px 5px 0px #201f1fbf;
+      -moz-box-shadow: 7px 10px 5px 0px #201f1fbf;
+      box-shadow: 7px 10px 5px 0px #201f1fbf;
+    }
+  }
+  .project-links {
+    * {
+      text-decoration: none;
+      margin-left: 2rem;
+    }
+  }
+}

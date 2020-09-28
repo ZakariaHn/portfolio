@@ -1,39 +1,48 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const secondCard = (props) => {
+import { DistortionText } from "react-text-fun";
+const firstCard = (props) => {
   return (
-    <div className="secondCard">
+    <div className="zamagana-card">
       <div className="project">
         <div className="image">
           <div className="overlay z"></div>
         </div>
         <div className="project-content">
-          <h3 className="project-title">project-name</h3>
+          <h3 className="project-title">
+            <DistortionText text="Zamagana" fill="#c2363d" speed={0.04} />
+          </h3>
           <div className="project-description">
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              Zamagana is a browser based synthesizer, made during DCI's WEB
+              Development Course/ 2019-2021 as a team project. It uses Tone.js
+              API.
             </p>
           </div>
           <ul className="project-tech-list">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>SASS</li>
             <li>React.js</li>
-            <li>Node.js</li>
-            <li>Three.js</li>
+            <li>Tone.js</li>
           </ul>
           <div className="project-links">
             <FontAwesomeIcon
               className="iconWork"
               icon={props.faGithub}
               onClick={() => {
-                window.open("https://github.com/");
+                window.open(
+                  "https://github.com/ZakariaHn/zamagana-synthesizer"
+                );
               }}
             />
             <FontAwesomeIcon
               className="iconWork"
               icon={props.faExternalLinkAlt}
               onClick={() => {
-                window.open("https://github.com/");
+                window.open(
+                  "https://zakariahn.github.io/zamagana-synthesizer/"
+                );
               }}
             />
           </div>
@@ -43,4 +52,4 @@ const secondCard = (props) => {
   );
 };
 
-export default secondCard;
+export default firstCard;

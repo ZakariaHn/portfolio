@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import FirstCard from "../components/work/firstCard";
-import SecondCard from "../components/work/secondCard";
+import Rosetta from "../components/work/rosetta";
+import Zamagana from "../components/work/zamagana";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-
+import Navbar from "../components/work/navBar";
 const WorkPage = () => {
   const [transitions] = useState({
     pageVariants: {
@@ -46,8 +46,9 @@ const WorkPage = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <FirstCard faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
-      <SecondCard faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
+      <Navbar className="nav-bar-work" />
+      <Zamagana faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
+      <Rosetta faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
     </motion.div>
   );
 };
