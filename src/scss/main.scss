@@ -1,14 +1,16 @@
 @import "./pages/home";
 @import "./pages/about";
-@import "./pages/work";
+@import "./pages/work/work";
 @import "./pages/services/cards";
 @import "./pages/services/logos";
 @import "./pages/contact";
+@import "./pages/work/firstCard";
+@import "./pages/work/secondCard";
 @import "navBar";
 @import "cursor";
 
 body {
-  background-color: rgb(12, 12, 12);
+  background-color: #0c0c0c;
 }
 html,
 body,

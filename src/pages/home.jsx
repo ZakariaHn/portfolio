@@ -29,15 +29,11 @@ const HomePage = () => {
       ease: "anticipate",
       duration: 1,
     },
-    pageStyle: {
-      position: "absolute",
-    },
   });
-  const { pageStyle, pageVariants, pageTransition } = transitions;
+  const { pageVariants, pageTransition } = transitions;
 
   return (
     <motion.div
-      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"

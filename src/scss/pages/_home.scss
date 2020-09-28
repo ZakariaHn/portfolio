@@ -5,17 +5,12 @@
   width: 100%;
   height: 100%;
   display: flex;
+  position: absolute;
 }
 
 .homePageBody {
   width: 80%;
   height: 100%;
-}
-
-.logo {
-  color: #c2363dee;
-  font-family: "Monoton", cursive;
-  font-size: 1.6rem;
 }
 
 // ============================================================= Left NavBar =====================================================================

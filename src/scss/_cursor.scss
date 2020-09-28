@@ -1,50 +1,50 @@
-*:hover {
-  cursor: none;
-}
+// *:hover {
+//   cursor: none;
+// }
 
-.cursor {
-  width: 3rem;
-  height: 3rem;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
+// .cursor {
+//   width: 3rem;
+//   height: 3rem;
+//   position: fixed;
+//   transform: translate(-50%, -50%);
+//   pointer-events: none;
+//   z-index: 9999;
+//   mix-blend-mode: difference;
 
-  @include centralize;
-  .inner {
-    height: 0.4rem;
-    width: 0.4rem;
-    background-color: #dad6d6;
-    border-radius: 50%;
-  }
-  .left {
-    height: 0.5rem;
-    width: 0.5rem;
-    border-top: $cursor-borders;
-    border-right: $cursor-borders;
-    transform: rotate(45deg);
-  }
-  .right {
-    height: 0.5rem;
-    width: 0.5rem;
-    border-left: $cursor-borders;
-    border-bottom: $cursor-borders;
-    transform: rotate(45deg);
-  }
-}
-.cursor--link-hovered {
-  .inner {
-    height: 0.8rem;
-    width: 0.8rem;
-    background-color: #c2363d;
-  }
-}
+//   @include centralize;
+//   .inner {
+//     height: 0.4rem;
+//     width: 0.4rem;
+//     background-color: #dad6d6;
+//     border-radius: 50%;
+//   }
+//   .left {
+//     height: 0.5rem;
+//     width: 0.5rem;
+//     border-top: $cursor-borders;
+//     border-right: $cursor-borders;
+//     transform: rotate(45deg);
+//   }
+//   .right {
+//     height: 0.5rem;
+//     width: 0.5rem;
+//     border-left: $cursor-borders;
+//     border-bottom: $cursor-borders;
+//     transform: rotate(45deg);
+//   }
+// }
+// .cursor--link-hovered {
+//   .inner {
+//     height: 0.8rem;
+//     width: 0.8rem;
+//     background-color: #c2363d;
+//   }
+// }
 
-.cursor--clicked {
-  .inner {
-    background-color: #be6d71;
-    opacity: 0.4;
-    transform: scale(8);
-  }
-}
+// .cursor--clicked {
+//   .inner {
+//     background-color: #be6d71;
+//     opacity: 0.4;
+//     transform: scale(8);
+//   }
+// }

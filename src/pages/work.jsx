@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import NavBar from "../components/work/navBar";
-import Gallery from "../components/work/gallery";
-import Animations from "../components/work/floatingBoxes";
+import FirstCard from "../components/work/firstCard";
+import SecondCard from "../components/work/secondCard";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+
 const WorkPage = () => {
   const [transitions] = useState({
     pageVariants: {
@@ -44,9 +46,8 @@ const WorkPage = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <NavBar />
-      <Gallery />
-      <Animations />
+      <FirstCard faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
+      <SecondCard faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
     </motion.div>
   );
 };

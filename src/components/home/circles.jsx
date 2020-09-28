@@ -7,7 +7,7 @@ const Circles = () => {
     circlesItem = el;
   };
   useEffect(() => {
-    TweenMax.from(circlesItem, { duration: 4, opacity: 0, delay: 2 });
+    TweenMax.from(circlesItem, { duration: 8, opacity: 0, delay: 1 });
   });
 
   let today = new Date(),
