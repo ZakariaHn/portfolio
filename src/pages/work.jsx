@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Rosetta from "../components/work/rosetta";
+import CssAnimations from "../components/work/bonbon";
 import Zamagana from "../components/work/zamagana";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -46,9 +47,13 @@ const WorkPage = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar className="nav-bar-work" />
+      <Navbar />
       <Zamagana faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
       <Rosetta faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
+      <CssAnimations
+        faGithub={faGithub}
+        faExternalLinkAlt={faExternalLinkAlt}
+      />
     </motion.div>
   );
 };

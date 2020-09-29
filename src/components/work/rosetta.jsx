@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { LiquidDistortionText } from "react-text-fun";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { TweenMax } from "gsap";
 
-const secondCard = (props) => {
+const SecondCard = (props) => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.4 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="rosetta-card">
+    <div className="rosetta-card" ref={ref}>
       <div className="project">
         <div className="image">
           <div className="overlay z"></div>
@@ -51,4 +59,4 @@ const secondCard = (props) => {
   );
 };
 
-export default secondCard;
+export default SecondCard;

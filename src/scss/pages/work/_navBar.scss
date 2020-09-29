@@ -1,1 +1,28 @@
+.nav-bar-work {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
 
+  letter-spacing: 3px;
+  margin-bottom: 5rem;
+  font-size: small;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: 0px 2px 5px 0px #c2363dee;
+  padding: 0 16% 0 16%;
+  color: rgba(141, 17, 17, 0.993);
+  & * {
+    @include animate-anchores;
+  }
+  &:focus {
+    @include animate-anchores;
+  }
+  * {
+    &:hover {
+      border-right: thick double #1369627e;
+    }
+  }
+}

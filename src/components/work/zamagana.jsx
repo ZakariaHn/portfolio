@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DistortionText } from "react-text-fun";
-const firstCard = (props) => {
+import { TweenMax } from "gsap";
+const FirstCard = (props) => {
+  let cardItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.2 });
+  });
+  const ref = (el) => {
+    cardItem = el;
+  };
   return (
-    <div className="zamagana-card">
+    <div className="zamagana-card" ref={ref}>
       <div className="project">
         <div className="image">
           <div className="overlay z"></div>
@@ -52,4 +60,4 @@ const firstCard = (props) => {
   );
 };
 
-export default firstCard;
+export default FirstCard;

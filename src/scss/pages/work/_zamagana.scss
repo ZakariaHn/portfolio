@@ -3,20 +3,22 @@
   .image {
     background-image: url("../../../img/workgllary/synth.png");
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    background-position: left;
+    transition: 0.5s ease-in-out;
+    transform: rotateY(180deg);
     clip-path: polygon(
-      30% 9%,
-      0% 0%,
-      100% 30%,
-      30% 100%,
-      -10% 70%,
-      0% 20%,
-      100% 70%,
-      70% 100%
+      20% 0%,
+      100% 80%,
+      80% 100%,
+      80% 0%,
+      100% 20%,
+      20% 100%,
+      0% 80%,
+      0% 20%
     );
-    z-index: 1;
   }
+
   .project-description {
     transition: 0.5s ease-in-out;
     -webkit-box-shadow: 3px 4px 2px 0px #201f1fbf;
