@@ -44,8 +44,10 @@ const HomePage = () => {
       <NavLeft></NavLeft>
       <div className="homePageBody">
         <Logo />
-        <Circles></Circles>
-        <NameArea></NameArea>
+        <div className="content">
+          <NameArea></NameArea>
+          <Circles></Circles>
+        </div>
       </div>
     </motion.div>
   );

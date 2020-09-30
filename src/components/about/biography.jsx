@@ -6,20 +6,21 @@ const Biography = () => {
   let bioItem2 = useRef(null);
   useEffect(() => {
     TweenMax.from(bioItem1, {
-      duration: 3,
+      duration: 1.5,
       opacity: 0,
       y: 120,
       x: 160,
       delay: 1,
     });
     TweenMax.from(bioItem2, {
-      duration: 3,
+      duration: 1.5,
       opacity: 0,
       y: -100,
       x: -200,
       delay: 1,
     });
   });
+
   const ref1 = (el1) => {
     bioItem1 = el1;
   };

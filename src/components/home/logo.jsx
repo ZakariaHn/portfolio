@@ -7,16 +7,16 @@ const Logo = () => {
     TweenMax.from(logoItem, { duration: 2, x: -500, opacity: 1 });
   });
   return (
-    <div
-      className={"logo"}
-      ref={(el) => {
-        logoItem = el;
-      }}
-    >
-      <h4>
-        <DistortionText text="Z H" fill="#c2363d" />
-      </h4>
-    </div>
+    <h4>
+      <DistortionText
+        ref={(el) => {
+          logoItem = el;
+        }}
+        className="logo"
+        text="Z H"
+        fill="#c2363d"
+      />
+    </h4>
   );
 };
 

@@ -142,3 +142,18 @@
     }
   }
 }
+
+@mixin borders {
+  // border: 0.1rem thick double stretch
+  border-width: 0.2rem;
+  border-style: double;
+  border-image-repeat: stretch;
+  border-image-slice: 40;
+  border-image-source: repeating-linear-gradient(
+    15deg,
+    rgba(80, 28, 35, 0.747),
+    #1369627e,
+    rgba(77, 26, 32, 0.747),
+    rgba(252, 249, 249, 0.933)
+  );
+}

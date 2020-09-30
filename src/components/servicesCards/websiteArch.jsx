@@ -4,7 +4,7 @@ import ArchLogo from "./logos/Architecture";
 const WebArchCard = () => {
   let cardItem = useRef(null);
   useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.2 });
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0.2, delay: 1.2 });
   });
   const ref = (el) => {
     cardItem = el;

@@ -5,7 +5,7 @@ import WebDesignLogo from "./logos/webDesign";
 const WebDesignCard = () => {
   let cardItem = useRef(null);
   useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 0.8 });
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0.2, delay: 0.8 });
   });
   const ref = (el) => {
     cardItem = el;

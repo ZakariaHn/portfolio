@@ -11,6 +11,35 @@
 .homePageBody {
   width: 80%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .content {
+    display: flex;
+    height: 100%;
+    .nameArea {
+      height: 100%;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .name-info {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        letter-spacing: 0.25rem; // mixin
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 2rem;
+        margin-bottom: 2rem;
+        color: rgba(140, 140, 140, 0.993);
+      }
+      .job-info {
+        font-size: 1.3rem;
+        letter-spacing: 0.25rem; //mixin
+        color: #c2363dee;
+        margin-bottom: 5rem;
+      }
+    }
+  }
 }
 
 // ============================================================= Left NavBar =====================================================================
@@ -58,33 +87,32 @@
 
 .circles {
   height: 54%;
-  width: 100%;
+  width: 40%;
+  position: relative;
   @include centralize;
   .greeting {
     position: absolute;
-    top: 20rem;
-    left: 74.1rem;
+
     color: #c2363dee;
     letter-spacing: 0.25rem;
     font-size: 0.9rem;
     animation: translationGreeting 2s linear infinite alternate;
   }
   .big-circle {
-    width: 12rem;
-    height: 12rem;
-    top: 15rem;
-    right: 10.5rem;
+    width: 12vw;
+    height: 12vw;
+
     opacity: 0.8;
     border-radius: 50%;
-    position: absolute;
+
     background: rgba(0, 0, 0, 0.555);
     animation: planet-holder 20s linear infinite;
     box-shadow: $box-shadow;
     .small-circle {
-      width: 2.5rem;
-      height: 2.5rem;
-      left: 0.4rem;
-      top: 0.6rem;
+      width: 2.5vw;
+      height: 2.5vw;
+      left: 0.4vw;
+      top: 0.6vw;
       font-size: 0.8rem;
       font-weight: bolder;
       border-radius: 50%;
@@ -166,36 +194,16 @@
 
 // ============================================================= Name and Description Area ========================================================
 
-.nameArea {
-  height: 25%;
-  width: 100%;
-
-  .name-info {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    letter-spacing: 0.25rem; // mixin
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 2rem;
-    margin-bottom: 4rem;
-    color: rgba(140, 140, 140, 0.993);
-  }
-  .job-info {
-    font-size: 1.3rem;
-    letter-spacing: 0.25rem; //mixin
-    color: #c2363dee;
-  }
-}
-
-.work-services-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 3rem;
-  width: 20rem;
-  letter-spacing: 3px;
-  opacity: 0;
-  font-size: small;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
-  transform: translate(-4rem, 30rem);
-  border-bottom: 2px solid #c2363dee;
-}
+// .work-services-nav {
+//   display: flex;
+//   justify-content: space-between;
+//   height: 3rem;
+//   width: 20rem;
+//   letter-spacing: 3px;
+//   opacity: 0;
+//   font-size: small;
+//   font-weight: lighter;
+//   font-family: Arial, Helvetica, sans-serif;
+//   transform: translate(-4rem, 30rem);
+//   border-bottom: 2px solid #c2363dee;
+// }

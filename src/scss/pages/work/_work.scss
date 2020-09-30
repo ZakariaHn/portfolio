@@ -1,0 +1,57 @@
+.work-page-header {
+  font-family: "Caveat", cursive;
+  color: lightcoral;
+  margin: 0 0 8% 22%;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 0 0 1rem;
+    padding: 0;
+  }
+  .icon {
+    color: lightcoral;
+  }
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  .footer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .copyRights {
+      color: #d3c8c8cc;
+    }
+    .socialMedia,
+    .email {
+      transform: rotate(90deg);
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 9rem;
+      position: sticky;
+      bottom: 0;
+      p {
+        margin: 0;
+        color: #d3c8c8cc;
+        font-size: small;
+        font-weight: lighter;
+        letter-spacing: 3px;
+      }
+      div {
+        height: 0.1rem;
+        width: 6rem;
+        margin: 4px 0 0 4px;
+        background-color: #d3c8c8cc;
+      }
+    }
+  }
+}

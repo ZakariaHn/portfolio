@@ -4,7 +4,7 @@ import { TweenMax } from "gsap";
 const ResponisivnessCard = () => {
   let cardItem = useRef(null);
   useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1 });
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0.2, delay: 1 });
   });
   const ref = (el) => {
     cardItem = el;

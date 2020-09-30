@@ -12,10 +12,10 @@ const NavPicArea = () => {
       delay: 1,
     });
     TweenMax.from(bioItem2, {
-      duration: 1.5,
+      duration: 1,
       opacity: 0,
       y: -15,
-      delay: 1,
+      delay: 2.2,
     });
   });
   const ref1 = (el1) => {
