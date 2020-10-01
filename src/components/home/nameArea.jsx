@@ -1,12 +1,20 @@
-import React from "react";
-import { gsap } from "gsap";
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
 const NameArea = () => {
-  gsap.from(".nameArea", { opacity: 0, duration: 2, y: -100 });
+  let logoItem = useRef(null);
+  useEffect(() => {
+    TweenMax.from(logoItem, { duration: 1, y: 200, opacity: 1, delay: 2 });
+  });
   return (
-    <div className="nameArea">
-      <div className={"name-info"}>I'm Zakaria Hamdan</div>
-      <p className={"job-info"}>
-        Full-Stack Web Developer currenlty living in Germany.
+    <div
+      className="nameArea"
+      ref={(el) => {
+        logoItem = el;
+      }}
+    >
+      <div className="name-info">Hi, my name is Zakaria Hamdan</div>
+      <p className="job-info">
+        I'm Full-Stack Web Developer currenlty living in Germany.
       </p>
     </div>
   );

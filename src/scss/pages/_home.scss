@@ -50,13 +50,11 @@
   @include centralize;
 
   .lblAbout {
-    width: 4.2rem;
-    height: 1.5rem;
-    transform: rotate(-90deg);
     letter-spacing: 4px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: x-small;
+    border: none;
 
     @include animate-anchores;
   }

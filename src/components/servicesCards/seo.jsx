@@ -15,8 +15,8 @@ const SeoCard = () => {
       <div className="card-body">
         <h5>SEO</h5>
         <p>
-          Just that you have a website doesn't mean anyone will find it. I can
-          help your website get found in the search engines.
+          Only having a website doesn't mean anyone will find it. I can help
+          your website get found in the search engines.
         </p>
       </div>
     </div>

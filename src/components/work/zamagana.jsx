@@ -4,12 +4,13 @@ import { DistortionText } from "react-text-fun";
 import { TweenMax } from "gsap";
 const FirstCard = (props) => {
   let cardItem = useRef(null);
-  useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.2 });
-  });
   const ref = (el) => {
     cardItem = el;
   };
+  useEffect(() => {
+    TweenMax.from(cardItem, { duration: 1.5, opacity: 0, delay: 1.2 });
+  });
+
   return (
     <div className="zamagana-card" ref={ref}>
       <div className="project">

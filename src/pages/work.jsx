@@ -55,8 +55,16 @@ const WorkPage = () => {
     >
       <Navbar />
       <div className="work-page-header">
-        <FontAwesomeIcon className="icon" icon={faDiceD20} />
-        <p>Things I made and others I co-made...</p>
+        <p>
+          Things I made and others I co-made
+          <span> .</span>
+          <span> .</span>
+          <span> .</span>
+          <span> .</span>
+          <span> .</span>
+          <span> . </span>
+        </p>
+        {/* <FontAwesomeIcon className="icon" icon={faDiceD20} /> */}
       </div>
       <Zamagana faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
       <Rosetta faGithub={faGithub} faExternalLinkAlt={faExternalLinkAlt} />
@@ -68,21 +76,6 @@ const WorkPage = () => {
         faGithub={faGithub}
         faExternalLinkAlt={faExternalLinkAlt}
       />
-      <div className="contact">
-        <div className="footer">
-          <div className="socialMedia">
-            <p>zakaria.k.hamdan@gmail.com</p>
-            <div></div>
-          </div>
-          <div className="copyRights">
-            <p>Built & designed by Zakaria Hamdan</p>
-          </div>
-          <div className="email">
-            <p>zakaria.k.hamdan@gmail.com</p>
-            <div></div>
-          </div>
-        </div>
-      </div>
     </motion.div>
   );
 };

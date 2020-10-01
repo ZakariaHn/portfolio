@@ -17,7 +17,7 @@ const WebDesignCard = () => {
         <h5>WEB DESIGN</h5>
         <p>
           Working with you to develop a website strategy so that your website
-          not only looks great, but works great too.
+          looks and works great.
         </p>
       </div>
     </div>
