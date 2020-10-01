@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import NavBar from "../components/contact/navBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Footer from "../components/contact/footer";
+import ShootingStars from "../components/contact/shootingStars";
+import PageContent from "../components/contact/pageContent";
 const ContactPage = () => {
   const [transitions] = useState({
     pageVariants: {
@@ -32,8 +33,6 @@ const ContactPage = () => {
     },
   });
   const { pageStyle, pageVariants, pageTransition } = transitions;
-  const openEmail = () =>
-    (window.location.href = `mailto:zakaria.k.hamdan@gmail.com`);
 
   return (
     <motion.div
@@ -46,48 +45,9 @@ const ContactPage = () => {
       className="contact-page"
     >
       <NavBar />
-      <div className="text">
-        <h3>Let's communicate</h3>
-        <p>
-          Whether you have a question or just want to say hi, I'll try my best
-          to get back to you!
-        </p>
-        <p>I'm also open for work if you'd like to hire me.</p>
-        <button onClick={openEmail}>Get in touch</button>
-      </div>
-
-      <div class="sky-container">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
-
-      <div className="footer">
-        <div className="socialMedia">
-          <FontAwesomeIcon
-            className="iconWork"
-            icon={faGithub}
-            onClick={() => {
-              window.open("https://github.com/");
-            }}
-          />
-          <FontAwesomeIcon
-            className="iconWork"
-            icon={faLinkedin}
-            onClick={() => {
-              window.open("https://www.linkedin.com/in/zak-h/");
-            }}
-          />
-        </div>
-        <div className="copyRights">
-          <p>Built & designed by Zakaria Hamdan</p>
-        </div>
-        <div className="email">
-          <p>zakaria.k.hamdan@gmail.com</p>
-        </div>
-      </div>
+      <PageContent />
+      <ShootingStars />
+      <Footer />
     </motion.div>
   );
 };

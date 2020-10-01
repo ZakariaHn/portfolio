@@ -32,7 +32,7 @@ const Biography = () => {
       <p className={`first`} ref={ref1}>
         My abundant energy fuels me in the pursuit of many interests, hobbies,
         areas of study and artistic endeavor. Passionate about writing clean,
-        quality, high-performance codes and making food and music.
+        high-performance codes and making food and music.
       </p>
       <p className={`seconde`} ref={ref2}>
         I create successful websites that are fast, easy to use, and built with

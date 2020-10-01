@@ -7,7 +7,19 @@
   flex-direction: column;
   background: linear-gradient(125deg, #0c0c0c 0%, #8fb1c1 100%);
   font-family: "Indie Flower", cursive;
+  .contact-line {
+    width: 20rem;
+    height: 8px;
 
+    background-image: linear-gradient(
+      -45deg,
+      rgba(0, 0, 255, 0),
+      #8fb1c1,
+      rgba(0, 0, 255, 0)
+    );
+    background-color: turquoise;
+    border-radius: 1% 99%;
+  }
   .nav-bar-contact {
     display: flex;
     justify-content: space-around;
@@ -34,7 +46,7 @@
     }
   }
 
-  .text {
+  .page-content {
     width: 100%;
     height: 50%;
     display: flex;
@@ -48,7 +60,9 @@
       font-weight: lighter;
       letter-spacing: 2px;
       margin-top: 29%;
+      color: #8fb1c177;
     }
+
     p {
       font-size: 1.4vw;
     }
