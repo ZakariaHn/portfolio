@@ -54,68 +54,6 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .about-page {
-    .bio {
-      .first {
-        margin: 20% 50% 1% 8%;
-      }
-      .seconde {
-        margin: 0% 11% 0% 50%;
-      }
-    }
-    .navigator {
-      display: flex;
-      justify-content: center;
-      .imagedCiecle {
-        position: absolute;
-        top: 0;
-        right: 10;
-      }
-      .navBar {
-        height: 10rem;
-        width: 10rem;
-        top: 65%;
-        margin: 0 1rem 1rem 0;
-        padding-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        flex-flow: column;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-page {
-    .bio {
-      .first {
-        margin: 82% 10% 1% 8%;
-        padding-right: 1rem;
-        border-right: $border;
-      }
-      .seconde {
-        margin: 30% 10% 0% 8%;
-        padding-left: 1rem;
-        border-left: $border;
-      }
-    }
-    .navigator {
-      .imagedCircle {
-        margin-top: 7rem;
-        border-radius: 4px;
-        height: 20rem;
-        right: 10;
-      }
-      .navBar {
-        width: 8rem;
-        top: 67.7%;
-        margin: 0 -1rem 0 5rem;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 380px) {
   .about-page {
     background-size: contain;

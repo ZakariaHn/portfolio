@@ -1,5 +1,6 @@
 .rosetta-card {
   @include work-cards;
+
   .project {
     .image {
       position: absolute;
@@ -22,6 +23,7 @@
         box-shadow: -7px 10px 5px 0px #201f1fbf;
       }
     }
+
     .project-content {
       position: relative;
       text-align: left;
@@ -38,6 +40,7 @@
           margin-right: 2rem;
         }
       }
+
       .project-links {
         * {
           margin-right: 2rem;

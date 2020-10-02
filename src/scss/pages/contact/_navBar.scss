@@ -1,0 +1,25 @@
+.nav-bar-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  letter-spacing: 3px;
+  font-size: small;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding-top: 0.6rem;
+  z-index: 1;
+
+  * {
+    text-decoration: none;
+    color: #d3c8c8cc;
+    &:hover {
+      border-right: thick double #d3c8c8cc;
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      background-position: -100%;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

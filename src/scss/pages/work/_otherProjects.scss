@@ -1,14 +1,42 @@
 .other-projects {
-  * {
-    width: 50%;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  .movies-list,
+  .to-do-list {
+    @include borders;
+    width: 15rem;
+    height: 18rem;
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+    margin: 0 3rem 0 3rem;
+    color: #d3c8c8cc;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     letter-spacing: 1px;
     font-family: Arial, Helvetica, sans-serif;
+    .project-links {
+      display: flex;
+      flex-direction: row;
+      * {
+        margin: 0 1rem 0 1rem;
+        &:hover {
+          color: #c2363dee;
+          cursor: pointer;
+        }
+      }
+    }
+
     h6 {
       margin-bottom: 2rem;
     }
@@ -24,44 +52,6 @@
       color: #d3c8c8cc;
       font-weight: lighter;
       font-size: small;
-    }
-  }
-  display: flex;
-  justify-content: center;
-
-  height: 20rem;
-
-  .movies-list,
-  .to-do-list {
-    width: 15rem;
-    height: 18rem;
-    clip-path: polygon(
-      30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%
-    );
-    margin: 0 3rem 0 3rem;
-    // border: thick double #1369627e;
-    @include borders;
-    color: #d3c8c8cc;
-    display: flex;
-    justify-content: space-around;
-
-    .project-links {
-      display: flex;
-      flex-direction: row;
-      * {
-        margin: 0 1rem 0 1rem;
-        &:hover {
-          color: #c2363dee;
-          cursor: pointer;
-        }
-      }
     }
   }
 }

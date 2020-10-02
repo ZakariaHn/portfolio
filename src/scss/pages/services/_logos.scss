@@ -47,7 +47,7 @@
 
 // ______________________________________________________________ Responsive Card _________________________________________________________
 
-.container.thethird {
+.responsive {
   opacity: 1;
   box-shadow: $logos-box-shadow;
   animation: spin 10s linear infinite;
@@ -55,12 +55,12 @@
     background-color: black;
     border: 1px solid rgba(28, 131, 28, 0.247);
   }
-  .earth {
+  .a {
     width: 1.7rem;
     height: 1.7rem;
     border-radius: 50%;
   }
-  .moon {
+  .b {
     width: 0.7rem;
     height: 0.7em;
     border-radius: 50%;
@@ -69,21 +69,21 @@
 
 /*___________________________________________________ Architecture Card _________________________________________________________________*/
 
-.container.third {
+.architecture {
   div {
     box-shadow: inset 0 0 0.36rem 0 rgba(255, 86, 19, 0.555),
       inset 0 0 0.75rem 0 rgba(0, 0, 0, 0.9),
       0 0 2rem 0 rgba(255, 86, 19, 0.555);
   }
-  .sec-row-line-top3 {
+  .a {
     width: 1.7rem;
     margin-top: 30%;
   }
-  .sec-row-line-mid3 {
+  .b {
     width: 1rem;
     box-shadow: $logos-box-shadow;
   }
-  .sec-row-line-bottom3 {
+  .c {
     width: 0.3rem;
     margin-bottom: 20%;
   }
@@ -91,7 +91,7 @@
 
 // _________________________________________________________ SEO Card ___________________________________________________________________
 
-.container.fifth {
+.seo {
   box-shadow: $logos-box-shadow;
   animation: rotatefifth 2000s linear infinite;
 
@@ -108,9 +108,11 @@
   .b {
     transform: rotate(45deg);
   }
+
   .c {
     transform: rotate(90deg);
   }
+
   .d {
     transform: rotate(135deg);
     opacity: 0.7;
@@ -125,11 +127,13 @@
 
 // ________________________________________________________________ Support Card ___________________________________________________________
 
-.container.five {
+.support {
   padding: 0.2rem;
+  animation: spin 10s linear reverse infinite;
 
   div {
     width: 1.4rem;
+    box-shadow: 0px 6px rgba(255, 86, 19, 0.555);
   }
 
   .a {
@@ -147,26 +151,14 @@
   .d {
     transform: rotate(224deg) translate(0.7rem, -0.01rem);
   }
-  & div {
-    box-shadow: 0px 6px rgba(255, 86, 19, 0.555);
-  }
-  animation: spin 10s linear reverse infinite;
 }
 
 // ___________________________________________________________ Hosting Card ______________________________________________________________
 
-.container.thesecond {
+.hosting {
   padding: 0;
   transform: rotate(1deg);
   animation: spin 10s linear infinite;
-  .little {
-    width: 1rem;
-    height: 1rem;
-    background-color: black;
-    border-radius: 50%;
-    animation: spin 10s linear infinite;
-    box-shadow: inset 0 0.4rem 0.5rem 0 #429e3ba1, 0 0 1.25rem 0.4rem #da56238e;
-  }
   div {
     width: 3rem;
     height: 3rem;
@@ -174,6 +166,15 @@
     border: none;
     box-shadow: none;
     background: transparent;
+    .a {
+      width: 1rem;
+      height: 1rem;
+      background-color: black;
+      border-radius: 50%;
+      animation: spin 10s linear infinite;
+      box-shadow: inset 0 0.4rem 0.5rem 0 #429e3ba1,
+        0 0 1.25rem 0.4rem #da56238e;
+    }
   }
 }
 

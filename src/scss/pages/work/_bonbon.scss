@@ -1,37 +1,27 @@
 .bonbon-card {
   @include work-cards;
-  .project-title {
-    animation: shine 0.1s forwards, blink 16s 8s infinite;
-  }
-  .project-description {
-    transition: 0.5s ease-in-out;
-    -webkit-box-shadow: 3px 4px 2px 0px #201f1fbf;
-    -moz-box-shadow: 3px 4px 2px 0px #201f1fbf;
-    box-shadow: 3px 4px 2px 0px #201f1fbf;
-
-    &:hover {
-      transform: scale(1.05);
-      transform: translate(-0.5rem, -0.5rem);
-      -webkit-box-shadow: 7px 10px 5px 0px #201f1fbf;
-      -moz-box-shadow: 7px 10px 5px 0px #201f1fbf;
-      box-shadow: 7px 10px 5px 0px #201f1fbf;
-    }
-  }
   .image {
     clip-path: polygon(94% 90%, 90% 10%, 75% 40%, 35% 90%, -10% 60%, 35% 10%);
-
     transform: rotateY(180deg);
     background-image: url("../../../img/workgllary/css-drows.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .project-title {
+    animation: shine 0.1s forwards, blink 16s 8s infinite;
+  }
+
   .project-links {
     * {
       text-decoration: none;
       margin-left: 2rem;
     }
   }
+}
+.prject-description {
+  @include work-description-services-box-shadow-right;
 }
 
 @keyframes blinking {

@@ -1,0 +1,74 @@
+.work-page-header {
+  font-family: "Caveat", cursive;
+  color: #c2363dee;
+  margin: 0 0 8% 21%;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 0 0 1rem;
+    padding: 0;
+
+    :nth-child(1) {
+      animation-delay: 1s;
+    }
+    :nth-child(2) {
+      animation-delay: 2s;
+    }
+    :nth-child(3) {
+      animation-delay: 3s;
+    }
+    :nth-child(4) {
+      animation-delay: 4s;
+    }
+    :nth-child(5) {
+      animation-delay: 5s;
+    }
+    :nth-child(6) {
+      animation-delay: 6s;
+    }
+    span {
+      animation: blink 7s infinite 5s;
+    }
+  }
+  .icon {
+    color: #c2363dee;
+    font-size: 60%;
+    animation: rotateIcon 10s linear infinite;
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    color: #c2363dee;
+  }
+  30% {
+    color: rgb(35, 118, 121);
+  }
+  50% {
+    color: rgb(167, 158, 158);
+  }
+  70% {
+    color: #c2363dee;
+  }
+  99% {
+    color: #1f1d1dee;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

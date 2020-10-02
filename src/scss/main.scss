@@ -3,20 +3,12 @@
 @import "./pages/work/work";
 @import "./pages/services/cards";
 @import "./pages/services/logos";
-@import "./pages/contact";
-@import "./pages/work/rosetta";
-@import "./pages/work/zamagana";
-@import "./pages/work/otherProjects";
-@import "./pages/work/navBar";
-@import "./pages/work/bonbon";
+@import "./pages/contact/contact";
 @import "navBar";
 @import "cursor";
-// * {
-//   font-family: "Caveat", cursive;
-// }
 
-body {
-  background-color: #0c0c0c;
+* {
+  box-sizing: border-box;
 }
 html,
 body,
@@ -26,8 +18,5 @@ body,
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-}
-
-* {
-  box-sizing: border-box;
+  background-color: #0c0c0c;
 }

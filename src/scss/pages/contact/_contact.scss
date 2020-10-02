@@ -1,0 +1,14 @@
+@import "../contact/footer";
+@import "../contact/navBar";
+@import "../contact/pageContent";
+@import "../contact/shootingStars";
+.contact-page {
+  box-shadow: inset 0rem 0.2rem 2rem 0.5rem #0c0c0c;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: linear-gradient(125deg, #0c0c0c 0%, #8fb1c1 100%);
+  font-family: "Indie Flower", cursive;
+}

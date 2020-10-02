@@ -41,7 +41,7 @@ const PageContent = () => {
         Whether you have a question or just want to say hi, I'll try my best to
         get back to you!
       </p>
-      <p ref={p2Ref}>I'm also open for work if you'd like to hire me.</p>
+      <p ref={p2Ref}>I'm also open to work if you'd like to hire me.</p>
       <button ref={buttonRef} onClick={openEmail}>
         Get in touch
       </button>

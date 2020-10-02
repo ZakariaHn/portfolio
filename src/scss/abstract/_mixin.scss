@@ -29,14 +29,6 @@
   align-items: center;
 }
 
-@mixin contactForm {
-  border: 1px solid rgba(0, 0, 0, 0.466);
-  text-indent: 0.5rem;
-  background-color: transparent;
-  border-radius: 4px;
-  height: 2rem;
-}
-
 @mixin servicesCards {
   letter-spacing: 3px;
   line-height: 1.4rem;
@@ -73,7 +65,6 @@
     display: flex;
     position: relative;
     border-bottom: 2px solid #c2363d4d;
-
     .image {
       width: 57%;
       height: 82%;
@@ -90,6 +81,7 @@
         }
       }
     }
+
     .project-content {
       width: 50%;
       height: 82%;
@@ -144,7 +136,6 @@
 }
 
 @mixin borders {
-  // border: 0.1rem thick double stretch
   border-width: 0.2rem;
   border-style: double;
   border-image-repeat: stretch;
@@ -156,4 +147,19 @@
     rgba(77, 26, 32, 0.747),
     rgba(252, 249, 249, 0.933)
   );
+}
+
+@mixin work-description-services-box-shadow-right {
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 3px 4px 2px 0px #201f1fbf;
+  -moz-box-shadow: 3px 4px 2px 0px #201f1fbf;
+  box-shadow: 3px 4px 2px 0px #201f1fbf;
+
+  &:hover {
+    transform: scale(1.05);
+    transform: translate(-0.5rem, -0.5rem);
+    -webkit-box-shadow: 7px 10px 5px 0px #201f1fbf;
+    -moz-box-shadow: 7px 10px 5px 0px #201f1fbf;
+    box-shadow: 7px 10px 5px 0px #201f1fbf;
+  }
 }
