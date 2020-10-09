@@ -14,12 +14,12 @@ const App = () => {
   return (
     <main style={{ overflowX: "hidden" }}>
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
+        <Switch>
+          <Route path="/" component={HomePage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/work" component={WorkPage} />
           <Route path="/services" component={ServicesPage} />
-          <Route path="/" component={HomePage} />
         </Switch>
       </AnimatePresence>
       <Cursor />

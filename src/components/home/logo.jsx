@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { DistortionText } from "react-text-fun";
 import { TweenMax } from "gsap";
+
 const Logo = () => {
   let logoItem = useRef(null);
   useEffect(() => {

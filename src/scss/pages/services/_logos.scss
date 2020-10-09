@@ -24,20 +24,20 @@
 .container.design {
   transform: rotate(-90deg) scale(0.9);
 
-  .sec-row-line-top1 {
+  .a {
     margin-top: 0.5rem;
     border-radius: 1% 90%;
     transform: rotate(110deg);
     @include designCardLogo;
   }
 
-  .sec-row-line-mid1 {
+  .b {
     opacity: 0.7;
     width: 1.5rem;
     transform: translatex(0.4rem);
   }
 
-  .sec-row-line-down1 {
+  .c {
     margin-bottom: 0.5rem;
     border-radius: 90% 1%;
     transform: rotate(-110deg);

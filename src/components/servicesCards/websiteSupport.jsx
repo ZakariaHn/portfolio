@@ -5,7 +5,7 @@ import SupportLogo from "./logos/support";
 const WebSupportCard = () => {
   let cardItem = useRef(null);
   useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0.2, delay: 1.6 });
+    TweenMax.from(cardItem, { duration: 1, opacity: 0.1, delay: 1.6 });
   });
   const ref = (el) => {
     cardItem = el;

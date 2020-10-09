@@ -5,7 +5,7 @@ import { TweenMax } from "gsap";
 const WebHostingCard = () => {
   let cardItem = useRef(null);
   useEffect(() => {
-    TweenMax.from(cardItem, { duration: 1.5, opacity: 0.2, delay: 1.8 });
+    TweenMax.from(cardItem, { duration: 1, opacity: 0.1, delay: 1.8 });
   });
   const ref = (el) => {
     cardItem = el;
