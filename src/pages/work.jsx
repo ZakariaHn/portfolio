@@ -5,13 +5,9 @@ import CssAnimations from "../components/work/bonbon";
 import OtherProjects from "../components/work/other/others";
 import Zamagana from "../components/work/zamagana";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faExternalLinkAlt,
-  faDiceD20,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "../components/work/navBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const WorkPage = () => {
   const [transitions] = useState({
     pageVariants: {

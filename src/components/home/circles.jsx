@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { TweenMax } from "gsap";
-import { MeteorRainLoading } from "react-loadingg";
+
 const Circles = () => {
   let circlesItem = useRef(null);
   const ref = (el) => {
