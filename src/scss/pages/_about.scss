@@ -42,7 +42,10 @@
     }
     .imagedCircle {
       background-image: url("../../img/profile.jpg");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgb(170, 170, 170);
       filter: grayscale(1);
       width: 15rem;
       height: 15rem;
